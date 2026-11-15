@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article (reference to follow) and this repository."
+title: "Armed conflict, routine immunisation gaps and reported wild poliovirus incidence in Pakistan: code and district-level data"
+version: "0.6.1"
+license: MIT
+authors:
+  - family-names: Munir
+    given-names: Faisal
+  - family-names: Arnison
+    given-names: Tor
+  - family-names: Abidi
+    given-names: Syed Taha Jamil
+  - family-names: Khan
+    given-names: Jahangir
+  - family-names: Taj
+    given-names: Tahir
+    affiliation: "Örebro University"
+    email: tahir.taj@oru.se

@@ -1,0 +1,368 @@
+key,manuscript_value,rule,where_in_manuscript
+audit_total,375,eq,Table S1; Abstract
+audit_2018,12,eq,Table S1; Table 1
+audit_2019,147,eq,Table S1; Table 1
+audit_2020,84,eq,Table S1; Table 1
+audit_2021,1,eq,Table S1; Table 1
+audit_2022,20,eq,Table S1; Table 1
+audit_2023,6,eq,Table S1; Table 1
+audit_2024,74,eq,Table S1; Table 1; Abstract
+audit_2025,31,eq,Table S1; Table 1; Abstract
+t2_c1_n,987,eq,Table 2 column 1
+t2_c2_n,931,eq,Table 2 column 2; Abstract Results
+t2_c3_n,840,eq,Table 2 column 3; Table 3; Figure 3
+t2_c1_vm1,1.026,eq,Table 2 col 1; Results P31
+t2_c1_vm1_lo,1.011,eq,Table 2 col 1
+t2_c1_vm1_hi,1.040,eq,Table 2 col 1
+t2_c1_vd1,1.000,eq,Table 2 col 1
+t2_c1_vd1_lo,0.993,eq,Table 2 col 1
+t2_c1_vd1_hi,1.008,eq,Table 2 col 1
+t2_c2_vm1,1.010,eq,Table 2 col 2; Abstract; Results; Table S2 base
+t2_c2_vm1_lo,0.994,eq,Table 2 col 2; Table S2
+t2_c2_vm1_hi,1.026,eq,Table 2 col 2; Table S2
+t2_c2_vm1_p,0.24,eq,Results P31
+t2_c2_vd1,1.002,eq,Table 2 col 2; Abstract; Results
+t2_c2_vd1_lo,0.996,eq,Table 2 col 2; Abstract
+t2_c2_vd1_hi,1.008,eq,Table 2 col 2; Abstract
+t2_c2_vd1_p,0.51,eq,Results P31
+t2_c3_vm1,1.014,eq,Table 2 col 3
+t2_c3_vm1_lo,1.001,eq,Table 2 col 3
+t2_c3_vm1_hi,1.027,eq,Table 2 col 3
+t2_c3_vd1,1.003,eq,Table 2 col 3
+t2_c3_vd1_lo,0.995,eq,Table 2 col 3
+t2_c3_vd1_hi,1.010,eq,Table 2 col 3
+t2_c3_zd10,1.70,eq,Table 2 col 3; Abstract; Results P34
+t2_c3_zd10_lo,1.37,eq,Table 2 col 3; Abstract
+t2_c3_zd10_hi,2.10,eq,Table 2 col 3; Abstract
+n_districts,120,eq,Methods; Results; Figure 3 and 4 captions
+n_cases,361,eq,Abstract; Results; Figure 3 caption
+share_zero,0.85,eq,Methods (85% of district-years are zero)
+n_dy_with_case,126,eq,Table S6 caption
+int,1.133,eq,Results P34; Table 3; Table S4; Abstract (1.10)
+int_lo,1.051,eq,Results P34; Table 3
+int_hi,1.222,eq,Results P34; Table 3
+int_p,0.001,eq,Results P34; Table 3
+marg5,0.704,eq,Table 3; Table S3
+marg5_lo,0.512,eq,Table 3; Table S3
+marg5_hi,0.968,eq,Table 3; Table S3
+marg5_p,0.03,eq,Table 3
+marg10,0.749,eq,Table 3; Table S3; Abstract (0.88); Results
+marg10_lo,0.564,eq,Table 3; Table S3
+marg10_hi,0.996,eq,Table 3; Table S3
+marg10_p,0.05,eq,Table 3
+marg20,0.849,eq,Table 3; Table S3
+marg20_lo,0.682,eq,Table 3; Table S3
+marg20_hi,1.056,eq,Table 3; Table S3
+marg20_p,0.14,eq,Table 3 (corrected from 0.69; see README)
+marg30,0.962,eq,Table 3; Table S3
+marg30_lo,0.818,eq,Table 3; Table S3
+marg30_hi,1.131,eq,Table 3; Table S3
+marg30_p,0.64,eq,Table 3
+marg40,1.089,eq,Table 3; Table S3; Abstract (1.17); Results
+marg40_lo,0.960,eq,Table 3; Table S3
+marg40_hi,1.236,eq,Table 3; Table S3
+marg40_p,0.18,eq,Table 3
+marg50,1.234,eq,Table 3; Table S3; Results (1.29)
+marg50_lo,1.083,eq,Table 3; Table S3
+marg50_hi,1.406,eq,Table 3; Table S3
+marg50_p,0.002,eq,Table 3
+marg60,1.398,eq,Table 3; Table S3
+marg60_lo,1.178,eq,Table 3; Table S3
+marg60_hi,1.660,eq,Table 3; Table S3
+marg60_p,0.000,eq,Table 3
+rob_base_vm1,1.010,eq,Table S2
+rob_nokar_vm1,1.014,eq,Table S2; Results P31
+rob_nokar_vm1_lo,0.996,eq,Table S2
+rob_nokar_vm1_hi,1.031,eq,Table S2
+rob_karcol_vm1,1.010,eq,Table S2; Results P31
+rob_karcol_vm1_lo,0.993,eq,Table S2
+rob_karcol_vm1_hi,1.027,eq,Table S2
+lopo_Balochis,1.149,eq,Table S4; Results
+lopo_Balochis_p,0.002,eq,Table S4
+lopo_Federall,1.149,eq,Table S4; Results
+lopo_Federall_p,0.024,eq,Table S4
+lopo_Khyber-P,1.100,eq,Table S4
+lopo_Khyber-P_p,0.007,eq,Table S4
+lopo_Punjab,1.145,eq,Table S4
+lopo_Punjab_p,0.001,eq,Table S4
+lopo_Sindh,1.170,eq,Table S4; Results
+lopo_Sindh_p,0.002,eq,Table S4
+lodo_min,1.107,eq,Table S4; Results
+lodo_max,1.168,eq,Table S4; Results
+lodo_maxp,0.022,eq,Table S4; Results
+strat_low,0.745,eq,Table S4; Results
+strat_low_lo,0.470,eq,Table S4; Results
+strat_low_hi,1.180,eq,Table S4; Results
+strat_low_p,0.21,eq,Table S4
+strat_mid,0.834,eq,Table S4; Results
+strat_mid_lo,0.674,eq,Table S4; Results
+strat_mid_hi,1.032,eq,Table S4; Results
+strat_mid_p,0.094,eq,Table S4
+strat_high,1.149,eq,Table S4; Results
+strat_high_lo,0.953,eq,Table S4; Results
+strat_high_hi,1.386,eq,Table S4; Results
+strat_high_p,0.15,eq,Table S4; Results
+grid_hh_districts,21,eq,Abstract; Results; Figure 3B; Figure 4
+grid_hh_cases,194,eq,Abstract; Results; Figure 3B
+grid_hh_rate,2.30,eq,Results; Figure 3B; Abstract (1.8)
+grid_rest_rate,0.11,eq,Results; Abstract
+grid_fold,21,eq,Results (16-fold)
+grid_max_other,0.6,le,Results (no other cell exceeded 0.5)
+ri_p,0.015,eq,Abstract; Results P34; Table 3; Table S4; Limitations
+h1_vm10,1.066,eq,Table S6
+h1_vm10_lo,0.916,eq,Table S6
+h1_vm10_hi,1.241,eq,Table S6
+h1_vd10,1.203,eq,Table S6; Results P40 (1.21)
+h1_vd10_lo,1.007,eq,Table S6; Results
+h1_vd10_hi,1.437,eq,Table S6; Results
+h1_vd10_p,0.041,eq,Table S6; Results
+h1_zd10,1.251,eq,Table S6
+h1_zd10_lo,1.075,eq,Table S6
+h1_zd10_hi,1.457,eq,Table S6
+h1_int,1.034,eq,Table S6; Limitations (1.05)
+h1_int_p,0.29,eq,Table S6; Limitations
+h2_vm10,1.161,eq,Table S6
+h2_vm10_lo,0.963,eq,Table S6
+h2_vm10_hi,1.401,eq,Table S6
+h2_vd10,0.836,eq,Table S6; Results (0.85)
+h2_vd10_lo,0.673,eq,Table S6; Results
+h2_vd10_hi,1.038,eq,Table S6; Results
+h2_zd10,1.399,eq,Table S6
+h2_zd10_lo,1.171,eq,Table S6
+h2_zd10_hi,1.672,eq,Table S6
+attacks_early,38,eq,Results; Table S5 discussion
+attacks_late,80,eq,Results
+order_polio_attacks_early_to_late,2.836,eq,Table S5; Results (0.96)
+order_polio_attacks_early_to_late_lo,0.848,eq,Table S5
+order_polio_attacks_early_to_late_hi,9.482,eq,Table S5
+order_polio_attacks_early_to_late_p,0.091,eq,Table S5; Results
+order_polio_attacks_late_to_early,1.731,eq,Table S5; Results (1.58)
+order_polio_attacks_late_to_early_lo,1.183,eq,Table S5
+order_polio_attacks_late_to_early_hi,2.534,eq,Table S5
+order_polio_attacks_late_to_early_p,0.005,eq,Table S5
+order_hworker_attacks_early_to_late,1.379,eq,Table S5
+order_hworker_attacks_early_to_late_p,0.52,eq,Table S5
+order_hworker_attacks_late_to_early,1.468,eq,Table S5
+order_hworker_attacks_late_to_early_p,0.028,eq,Table S5
+order_conflict_viol_early_to_late,1.308,eq,Table S5
+order_conflict_viol_early_to_late_p,0.10,eq,Table S5
+order_conflict_viol_late_to_early,1.052,eq,Table S5
+order_conflict_viol_late_to_early_p,0.34,eq,Table S5
+tv_flagged,19,eq,Abstract; Results; Table S7; Figure 4
+tv_cases_flag,78,eq,Abstract; Results; Table S7
+tv_cases_total,129,eq,Abstract; Results; Table S7
+tv_cases_rest,51,eq,Table S7
+tv_py_flag,49.1,eq,Table S7
+tv_py_rest,886.0,eq,Table S7
+tv_rate_flag,1.59,eq,Abstract; Results; Table S7
+tv_rate_rest,0.06,eq,Abstract; Results; Table S7
+tv_crude_rr,27.6,eq,Results; Table S7
+tv_overlap,17,eq,Results; Table S7
+m_py,9.41,eq,Abstract; Results; Table S7; Table S8
+m_py_lo,4.86,eq,Abstract; Results; Table S7; Table S8
+m_py_hi,18.20,eq,Abstract; Results; Table S7; Table S8
+m_y,27.64,eq,Table S7
+m_y_lo,13.38,eq,Table S7
+m_y_hi,57.12,eq,Table S7
+m_none_aic,672.2,eq,Table S8
+m_hcnt,2.73,eq,Table S8
+m_hcnt_lo,2.03,eq,Table S8
+m_hcnt_hi,3.69,eq,Table S8
+m_hcnt_aic,549.4,eq,Results; Table S8
+m_py_aic,572.8,eq,Results; Table S8
+m_any_flag,6.59,eq,Table S8
+m_any_flag_lo,3.50,eq,Table S8
+m_any_flag_hi,12.42,eq,Table S8
+m_any_hist,4.07,eq,Table S8
+m_any_hist_lo,1.85,eq,Table S8
+m_any_hist_hi,8.97,eq,Table S8
+m_cnt_flag,3.36,eq,Abstract (tracked version); Results; Table S8
+m_cnt_flag_lo,1.44,eq,Results; Table S8
+m_cnt_flag_hi,7.84,eq,Results; Table S8
+m_cnt_hist,2.04,eq,Results; Table S8
+m_cnt_hist_lo,1.40,eq,Results; Table S8
+m_cnt_hist_hi,2.99,eq,Results; Table S8
+m_cnt_flag_aic,531.8,eq,Results; Table S8
+m_rate_flag,2.72,eq,Results; trimmed Abstract
+m_rate_flag_lo,1.09,eq,Results; trimmed Abstract
+m_rate_flag_hi,6.81,eq,Results; trimmed Abstract
+m_rate_flag_p,0.032,eq,Results
+m_rate_hist,2.28,eq,Results
+m_rate_hist_lo,1.42,eq,Results
+m_rate_hist_hi,3.65,eq,Results
+m_rate_flag_aic,507.8,eq,Results
+m_both_flag,3.00,eq,Results
+m_both_flag_lo,1.19,eq,Results
+m_both_flag_hi,7.56,eq,Results
+noprior_districts,62,eq,Results (no prior case subgroup)
+noprior_rate_flag,0.28,eq,Results (corrected from 0.65; see README)
+noprior_rate_rest,0.02,eq,Results
+pred_ll,0.07,eq,Table 4; Results
+pred_ll_lo,0.04,eq,Table 4
+pred_ll_hi,0.15,eq,Table 4
+pred_hl,0.03,eq,Table 4; Results
+pred_hl_lo,0.01,eq,Table 4
+pred_hl_hi,0.07,eq,Table 4
+pred_lh,0.43,eq,Table 4; Results
+pred_lh_lo,0.28,eq,Table 4
+pred_lh_hi,0.82,eq,Table 4
+pred_hh,0.81,eq,Table 4; Results
+pred_hh_lo,0.49,eq,Table 4
+pred_hh_hi,1.74,eq,Table 4
+c_viol_lowzd,0.40,eq,Results
+c_viol_lowzd_lo,0.18,eq,Results
+c_viol_lowzd_hi,0.90,eq,Results
+c_viol_highzd,1.89,eq,Results
+c_viol_highzd_lo,1.33,eq,Results
+c_viol_highzd_hi,2.70,eq,Results
+c_both,11.1,eq,Results
+c_both_lo,3.6,eq,Results
+c_both_hi,33.3,eq,Results
+nb_median,5,eq,Results (spatial)
+s1_vm10xzd10,1.154,eq,Results; Table S9
+s1_vm10xzd10_lo,1.069,eq,Results; Table S9
+s1_vm10xzd10_hi,1.245,eq,Results; Table S9
+s1_nm10,1.200,eq,Results; Table S9
+s1_nm10_lo,0.915,eq,Results; Table S9
+s1_nm10_hi,1.573,eq,Results; Table S9
+s1_nd10,1.016,eq,Results; Table S9
+s1_nd10_lo,0.826,eq,Results; Table S9
+s1_nd10_hi,1.249,eq,Results; Table S9
+s2_vm10xzd10,1.153,eq,Results; Table S9
+s2_vm10xzd10_lo,1.070,eq,Results; Table S9
+s2_vm10xzd10_hi,1.243,eq,Results; Table S9
+s2_nbc,1.160,eq,Results; Table S9
+s2_nbc_lo,0.728,eq,Results; Table S9
+s2_nbc_hi,1.851,eq,Results; Table S9
+moran_2019,0.03,eq,Table S9 note
+moran_2020,0.19,eq,Results; Table S9 note
+moran_2021,0.01,eq,Table S9 note
+moran_2022,0.03,eq,Table S9 note
+moran_2023,-0.02,eq,Table S9 note
+moran_2024,0.35,eq,Results; Table S9 note
+moran_2025,0.05,eq,Table S9 note
+moran_mean,0.09,eq,Results
+moran_n_sig,4,eq,Results
+order_hworker_attacks_early_to_late_lo,0.515,eq,Table S5
+order_hworker_attacks_early_to_late_hi,3.691,eq,Table S5
+order_hworker_attacks_late_to_early_lo,1.042,eq,Table S5
+order_hworker_attacks_late_to_early_hi,2.069,eq,Table S5
+t1_viol_2018,824,eq,Table 1
+t1_hw_2018,8,eq,Table 1
+t1_pol_2018,7,eq,Table 1
+t1_viol_2019,960,eq,Table 1
+t1_hw_2019,25,eq,Table 1
+t1_pol_2019,10,eq,Table 1
+t1_viol_2020,538,eq,Table 1
+t1_hw_2020,7,eq,Table 1
+t1_pol_2020,5,eq,Table 1
+t1_viol_2021,783,eq,Table 1
+t1_hw_2021,12,eq,Table 1
+t1_pol_2021,16,eq,Table 1
+t1_viol_2022,1424,eq,Table 1
+t1_hw_2022,13,eq,Table 1
+t1_pol_2022,16,eq,Table 1
+t1_viol_2023,1800,eq,Table 1
+t1_hw_2023,28,eq,Table 1
+t1_pol_2023,23,eq,Table 1
+t1_viol_2024,2404,eq,Table 1
+t1_hw_2024,36,eq,Table 1
+t1_pol_2024,41,eq,Table 1
+inf_wb_rad_p,0.001,le,Results; Table S10 (printed <0.001)
+inf_wb_webb_p,0.001,le,Results; Table S10 (printed <0.001)
+inf_ex2024,1.167,eq,Results; Table S10
+inf_ex2024_lo,1.057,eq,Results; Table S10
+inf_ex2024_hi,1.289,eq,Results; Table S10
+inf_ex202425,1.143,eq,Results; Table S10
+inf_ex202425_lo,1.043,eq,Results; Table S10
+inf_ex202425_hi,1.251,eq,Results; Table S10
+cov_all,1.102,eq,Results; Table S10
+cov_all_lo,1.035,eq,Results; Table S10
+cov_all_hi,1.173,eq,Results; Table S10
+sp_bartlett300km,1.133,eq,Results; Table S10
+sp_bartlett300km_lo,1.063,eq,Results; Table S10
+sp_bartlett300km_hi,1.207,eq,Results; Table S10
+inf_ex201920,1.106,eq,Table S10
+inf_ex201920_lo,1.043,eq,Table S10
+inf_ex201920_hi,1.173,eq,Table S10
+cov_travel,1.124,eq,Table S10
+cov_travel_lo,1.054,eq,Table S10
+cov_travel_hi,1.198,eq,Table S10
+cov_fac,1.126,eq,Table S10
+cov_fac_lo,1.043,eq,Table S10
+cov_fac_hi,1.216,eq,Table S10
+cov_ntl,1.135,eq,Table S10
+cov_ntl_lo,1.050,eq,Table S10
+cov_ntl_hi,1.227,eq,Table S10
+zd_1235,1.114,eq,Table S10
+zd_1235_lo,1.047,eq,Table S10
+zd_1235_hi,1.186,eq,Table S10
+sp_bartlett100km,1.133,eq,Table S10
+sp_bartlett100km_lo,1.062,eq,Table S10
+sp_bartlett100km_hi,1.208,eq,Table S10
+sp_bartlett200km,1.133,eq,Table S10
+sp_bartlett200km_lo,1.060,eq,Table S10
+sp_bartlett200km_hi,1.210,eq,Table S10
+sp_divisionclusters27wald,1.133,eq,Table S10
+sp_divisionclusters27wald_lo,1.056,eq,Table S10
+sp_divisionclusters27wald_hi,1.215,eq,Table S10
+sp_divisionclusters27wildscorebootstrapwebb_p,0.011,eq,Results; Table S10
+moran21_p_norm,0.78,eq,Table S9 note
+tg0_districts,39,eq,Table S11
+tg0_share,69.8,eq,Table S11
+tg0_popshare,39.2,eq,Table S11
+tg0_rr,3.6,eq,Table S11
+tg1_districts,40,eq,Table S11
+tg1_share,77.5,eq,Table S11
+tg1_popshare,12.9,eq,Table S11
+tg1_rr,23.2,eq,Table S11
+tg2_districts,19,eq,Table S11
+tg2_share,60.5,eq,Table S11
+tg2_popshare,5.3,eq,Table S11
+tg2_rr,27.6,eq,Table S11
+tg3_districts,58,eq,Table S11
+tg3_share,91.5,eq,Table S11
+tg3_popshare,48.0,eq,Table S11
+tg3_rr,11.6,eq,Table S11
+tg4_districts,19,eq,Table S11
+tg4_share,69.0,eq,Table S11
+tg4_popshare,16.6,eq,Table S11
+tg4_rr,11.2,eq,Table S11
+tg5_districts,19,eq,Table S11
+tg5_share,55.0,eq,Table S11
+tg5_popshare,4.2,eq,Table S11
+tg5_rr,27.8,eq,Table S11
+tg6_districts,64,eq,Table S11
+tg6_share,93.0,eq,Table S11
+tg6_popshare,48.8,eq,Table S11
+tg6_rr,14.0,eq,Table S11
+tg7_districts,19,eq,Table S11
+tg7_share,40.3,eq,Table S11
+tg7_popshare,23.6,eq,Table S11
+tg7_rr,2.2,eq,Table S11
+tg8_districts,19,eq,Table S11
+tg8_share,41.9,eq,Table S11
+tg8_popshare,4.1,eq,Table S11
+tg8_rr,17.0,eq,Table S11
+tg2_share,60,eq,"Results (percent, rounded)"
+tg4_share,69,eq,"Results (percent, rounded)"
+tg5_share,55,eq,"Results (percent, rounded)"
+tg7_share,40,eq,"Results (percent, rounded)"
+tg8_share,42,eq,"Results (percent, rounded)"
+smp_in_districts,120,eq,Table S12
+smp_in_cases,361,eq,Table S12
+smp_in_rate,0.23,eq,Table S12
+smp_in_pop,227.8,eq,Table S12
+smp_in_viol,11.6,eq,Table S12
+smp_out_districts,21,eq,Table S12
+smp_out_cases,2,eq,Table S12
+smp_out_rate,0.04,eq,Table S12
+smp_out_pop,8.0,eq,Table S12
+smp_out_viol,2.5,eq,Table S12
+zd_0035,1.113,eq,Table S10
+zd_0035_lo,1.043,eq,Table S10
+zd_0035_hi,1.187,eq,Table S10
+zd_previous,1.097,eq,Results; Table S10 note
+zd_previous_lo,1.034,eq,Results; Table S10 note
+zd_previous_hi,1.163,eq,Results; Table S10 note
+t2_c3_vm1_p,0.030,eq,Results P34

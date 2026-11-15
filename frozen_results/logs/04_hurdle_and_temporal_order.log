@@ -1,0 +1,17 @@
+Hurdle part 1: any case (126 of 840 district-years), OR
+  violence, district mean, per 10/yr                         1.066 (0.916 to 1.241)  p = 0.4060
+  violence, annual deviation, per 10/yr                      1.203 (1.007 to 1.437)  p = 0.0413
+  zero-dose, per 10 pp                                       1.251 (1.075 to 1.457)  p = 0.0039
+  interaction                                                1.034 (0.971 to 1.101)  p = 0.2933
+Hurdle part 2: count given >0 (126 district-years), zero-truncated NB, IRR
+  violence, district mean, per 10/yr                         1.161 (0.963 to 1.401)  p = 0.1182
+  violence, annual deviation, per 10/yr                      0.836 (0.673 to 1.038)  p = 0.1044
+  zero-dose, per 10 pp                                       1.399 (1.171 to 1.672)  p = 0.0002
+
+Temporal ordering (polio-campaign attacks: 38 in 2018-2021, 80 in 2022-2024)
+  polio-campaign attacks: early exposure -> late cases       2.836 (0.848 to 9.482)  p = 0.0906
+  polio-campaign attacks: late exposure -> early cases       1.731 (1.183 to 2.534)  p = 0.0048
+  health-worker attacks: early exposure -> late cases        1.379 (0.515 to 3.691)  p = 0.5226
+  health-worker attacks: late exposure -> early cases        1.468 (1.042 to 2.069)  p = 0.0282
+  violent events, per 10/yr: early exposure -> late cases    1.308 (0.946 to 1.808)  p = 0.1039
+  violent events, per 10/yr: late exposure -> early cases    1.052 (0.947 to 1.168)  p = 0.3443

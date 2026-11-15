@@ -1,0 +1,142 @@
+district_id,district_name,province
+1,Bagh,Azad Kashmir
+10,Disputed Area 1,Balochistan
+100,Sheikhupura,Punjab
+101,Khanewal,Punjab
+102,Lodhran,Punjab
+103,Multan,Punjab
+104,Pakpattan,Punjab
+105,Sahiwal,Punjab
+106,Vehari,Punjab
+107,Attok,Punjab
+108,Chakwal,Punjab
+109,Jhelum,Punjab
+11,Disputed Area 2,Balochistan
+110,Rawalpindi,Punjab
+111,Bhakkar,Punjab
+112,Khushab,Punjab
+113,Mianwali,Punjab
+114,Sargodha,Punjab
+115,Badin,Sindh
+116,Dadu,Sindh
+117,Hyderabad,Sindh
+118,Jamshoro,Sindh
+119,Matiari,Sindh
+12,Kalat,Balochistan
+120,Tando Allahyar,Sindh
+121,Tando M. Khan,Sindh
+122,Thatta,Sindh
+123,Karachi Central,Sindh
+124,Karachi East,Sindh
+125,Karachi South,Sindh
+126,Karachi west,Sindh
+127,Malir,Sindh
+128,Jakobabad,Sindh
+129,Kashmore,Sindh
+13,Kharan,Balochistan
+130,Larkana,Sindh
+131,Shikarpur,Sindh
+132,Mirphurkhas,Sindh
+133,Mithi,Sindh
+134,Sanghar,Sindh
+135,Umerkot,Sindh
+136,Rann of Kutch,Sindh
+137,Ghotki,Sindh
+138,Khairpur,Sindh
+139,Naushahro Firoz,Sindh
+14,Khuzdar,Balochistan
+140,Nawab Shah,Sindh
+141,Sukkur,Sindh
+15,Lasbela,Balochistan
+16,Mastung,Balochistan
+17,Gwadar,Balochistan
+18,Kech,Balochistan
+19,Panjgur,Balochistan
+2,Bhimber,Azad Kashmir
+20,Bolan,Balochistan
+21,Jafarabad,Balochistan
+22,Jhal Magsi,Balochistan
+23,Nasirabad,Balochistan
+24,Chagai,Balochistan
+25,Pishin,Balochistan
+26,Qilla Abdullah,Balochistan
+27,Quetta,Balochistan
+28,Dera Bugti,Balochistan
+29,Kholu,Balochistan
+3,Kotli,Azad Kashmir
+30,Sibi,Balochistan
+31,Ziarat,Balochistan
+32,Barkhan,Balochistan
+33,Loralai,Balochistan
+34,Musakhel,Balochistan
+35,Qilla Saifullah,Balochistan
+36,Zhob,Balochistan
+37,Bajaur,Federally Administered Tribal Ar
+38,Khyber,Federally Administered Tribal Ar
+39,Kurram,Federally Administered Tribal Ar
+4,Mirpur,Azad Kashmir
+40,Largha Shirani,Federally Administered Tribal Ar
+41,Mohmand,Federally Administered Tribal Ar
+42,N. Waziristan,Federally Administered Tribal Ar
+43,Orakzai,Federally Administered Tribal Ar
+44,S. Waziristan,Federally Administered Tribal Ar
+45,Chilas,Gilgit-Baltistan
+46,Gilgit,Gilgit-Baltistan
+47,Gilgit (Tribal Territory),Gilgit-Baltistan
+48,Kargil,Gilgit-Baltistan
+49,Kupwara (Gilgit Wazarat),Gilgit-Baltistan
+5,Muzaffarabad,Azad Kashmir
+50,Ladakh (Leh),Gilgit-Baltistan
+51,Islamabad,Islamabad
+52,Bannu,Khyber-Pakhtunkhwa
+53,Lakki Marwat,Khyber-Pakhtunkhwa
+54,Dera Ismail Khan,Khyber-Pakhtunkhwa
+55,Tank,Khyber-Pakhtunkhwa
+56,Adam Khel,Khyber-Pakhtunkhwa
+57,Bhittani,Khyber-Pakhtunkhwa
+58,Abbottabad,Khyber-Pakhtunkhwa
+59,Battagram,Khyber-Pakhtunkhwa
+6,Neelum,Azad Kashmir
+60,Haripur,Khyber-Pakhtunkhwa
+61,Kohistan,Khyber-Pakhtunkhwa
+62,Mansehra,Khyber-Pakhtunkhwa
+63,Hangu,Khyber-Pakhtunkhwa
+64,Karak,Khyber-Pakhtunkhwa
+65,Kohat,Khyber-Pakhtunkhwa
+66,Chitral,Khyber-Pakhtunkhwa
+67,Dir,Khyber-Pakhtunkhwa
+68,Malakand P.A.,Khyber-Pakhtunkhwa
+69,Shangla,Khyber-Pakhtunkhwa
+7,Poonch,Azad Kashmir
+70,Swat,Khyber-Pakhtunkhwa
+71,Buner,Khyber-Pakhtunkhwa
+72,Mardan,Khyber-Pakhtunkhwa
+73,Swabi,Khyber-Pakhtunkhwa
+74,Charsadda,Khyber-Pakhtunkhwa
+75,Nowshera,Khyber-Pakhtunkhwa
+76,Peshawar,Khyber-Pakhtunkhwa
+77,Bahawalnagar,Punjab
+78,Bahawalpur,Punjab
+79,Rahimyar Khan,Punjab
+8,Sudhnati,Azad Kashmir
+80,Dera Ghazi Kha,Punjab
+81,Layyah,Punjab
+82,Muzaffargarh,Punjab
+83,Rajan Pur,Punjab
+84,Faisalabad,Punjab
+85,Jhang,Punjab
+86,Toba Tek Singh,Punjab
+87,Gujarat,Punjab
+88,Gujranwala 1,Punjab
+89,Gujranwala 2,Punjab
+9,Awaran,Balochistan
+90,Gujrat,Punjab
+91,Hafizabad,Punjab
+92,Narowal 1,Punjab
+93,Narowal 2,Punjab
+94,Sialkot,Punjab
+95,Kasur,Punjab
+96,Lahore,Punjab
+97,Nankana Sahib,Punjab
+98,Okara,Punjab
+99,Okara 1,Punjab

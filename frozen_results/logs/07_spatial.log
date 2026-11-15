@@ -1,0 +1,19 @@
+Queen contiguity: median 5 neighbours (range 1-11), 0 islands
+ no neighbour terms:
+  vm10:zd10                                                  1.133 (1.051 to 1.222)  p = 0.0012
+ with neighbour violence:
+  vm10:zd10                                                  1.154 (1.069 to 1.245)  p = 0.0002
+  nm10                                                       1.200 (0.915 to 1.573)  p = 0.1872
+  nd10                                                       1.016 (0.826 to 1.249)  p = 0.8836
+ with neighbour violence and cases:
+  vm10:zd10                                                  1.153 (1.070 to 1.243)  p = 0.0002
+  nbc                                                        1.160 (0.728 to 1.851)  p = 0.5321
+ Moran's I, Pearson residuals of the primary model:
+  2019  I = +0.034  p = 0.231
+  2020  I = +0.185  p = 0.003
+  2021  I = +0.008  p = 0.005
+  2022  I = +0.031  p = 0.044
+  2023  I = -0.024  p = 0.341
+  2024  I = +0.349  p = 0.001
+  2025  I = +0.055  p = 0.129
+  mean I = +0.091; significant in 4 of 7 years

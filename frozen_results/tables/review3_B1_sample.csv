@@ -1,0 +1,3 @@
+group,districts,cases_2019_2025,share_of_cases,population_m,cases_per_million_py,districts_with_any_case,violent_events_per_yr_median,violent_events_per_yr_mean
+outside,21,2,0.005509641873278237,7.987679108666915,0.0357693745363751,2,0.0,2.496598639455782
+in interaction sample,120,361,0.9944903581267218,227.8228663805747,0.2263663406169215,68,3.7857142857142856,11.626190476190477

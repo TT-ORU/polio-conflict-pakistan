@@ -1,0 +1,9 @@
+FROZEN publication package
+Folder: PUBLICATION_PACKAGE_v0.6_frozen_2026-10-21
+Frozen (UTC): 2026-10-21 21:59
+Files in MANIFEST.sha256: 191
+SHA-256 of MANIFEST.sha256: ef2fc425908125c6824eb7d5e4f9d358104a5d462b687c61159d4cb156c217e0
+Verify with:  sha256sum -c MANIFEST.sha256
+All files were made read-only when frozen. Do not edit; make a new versioned copy for any change.
+To rerun, unzip the SHAREABLE zip (or copy this folder) to a writable location and run there; this folder is read-only.
+The SHAREABLE zip beside this folder holds everything here except restricted_inputs/.

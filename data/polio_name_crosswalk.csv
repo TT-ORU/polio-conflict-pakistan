@@ -1,0 +1,81 @@
+polio_district,panel_district_id,panel_district_name,note
+BADIN,115,Badin,
+BAHAWALPUR,78,Bahawalpur,
+BAJAUR,37,Bajaur,
+BANNU,52,Bannu,
+CHAGAI,24,Chagai,
+CHAGHAI,24,Chagai,
+CHAKWAL,108,Chakwal,
+CHAMAN,26,Qilla Abdullah,split from Qilla Abdullah
+CHARSADDA,74,Charsadda,
+DADU,116,Dadu,
+DERA BUGTI,28,Dera Bugti,
+DERA GHAZI KHAN,80,Dera Ghazi Kha,
+DERA ISMAIL KHAN,54,Dera Ismail Khan,
+DUKKI,33,Loralai,split from Loralai
+GHOTKI,137,Ghotki,
+HANGU,63,Hangu,
+HARNAI,30,Sibi,split from Sibi
+HYDERABAD,117,Hyderabad,
+ICT,51,Islamabad,
+JACOBABAD,128,Jakobabad,
+JAFARABAD,21,Jafarabad,
+JAMSHORO,118,Jamshoro,
+JHAL MAGSI,22,Jhal Magsi,
+JHELUM,109,Jhelum,
+KAMBAR,130,Larkana,"Kambar-Shahdadkot, split from Larkana"
+KARAK,64,Karak,
+KASHMORE,129,Kashmore,
+KHAIRPUR,138,Khairpur,
+KHARAN,13,Kharan,
+KHIEAST,124,Karachi East,Karachi East
+KHIGADAP,127,Malir,"Gadap, Karachi->Malir"
+KHIGIQBAL,124,Karachi East,"Gulshan-e-Iqbal, Karachi East"
+KHIJAMSHEED,124,Karachi East,"Jamshed, Karachi East"
+KHIKAMARI,126,Karachi west,"Keamari, Karachi West"
+KHIKEAMARI,126,Karachi west,"Keamari, Karachi West"
+KHILANDHI,124,Karachi East,"Landhi/Korangi, Karachi East"
+KHILAYARI,125,Karachi South,"Lyari, Karachi South"
+KHIMALIR,127,Malir,Malir
+KHIORANGI,124,Karachi East,"Korangi, Karachi East"
+KHYBER,38,Khyber,
+KILLA ABDULLAH,26,Qilla Abdullah,
+KILLA SAIFULLAH,35,Qilla Saifullah,
+KOHAT,65,Kohat,
+LAHORE,96,Lahore,
+LAKKI MARWAT,53,Lakki Marwat,
+LARKANA,130,Larkana,
+LAYYAH,81,Layyah,
+LORALAI,33,Loralai,
+MASTUNG,16,Mastung,
+MIRPURKHAS,132,Mirphurkhas,
+MOHMAND,41,Mohmand,
+MUZAFFARGARH,82,Muzaffargarh,
+NASIRABAD,23,Nasirabad,
+NAUSHAHRO FEROZE,139,Naushahro Firoz,
+NORTH WAZIRISTAN,42,N. Waziristan,
+NOSHKI,24,Chagai,"Nushki, split from Chagai"
+NOWSHERA,75,Nowshera,
+OKARA,98,Okara,
+ORAKZAI,43,Orakzai,
+PESHAWAR,76,Peshawar,
+PISHIN,25,Pishin,
+QUETTA,27,Quetta,
+RAHIM YAR KHAN,79,Rahimyar Khan,
+RAJANPUR,83,Rajan Pur,
+SANGHAR,134,Sanghar,
+SHAHEED BENAZIRABAD,140,Nawab Shah,formerly Nawabshah
+SHANGLA,69,Shangla,
+SHIKARPUR,131,Shikarpur,
+SIBI,30,Sibi,
+SOHBATPUR,21,Jafarabad,split from Jafarabad
+SOUTH WAZIRISTAN,44,S. Waziristan,
+SUJAWAL,122,Thatta,split from Thatta
+SUKKUR,141,Sukkur,
+SWABI,73,Swabi,
+TANDO ALLAHYAR,120,Tando Allahyar,
+TANK,55,Tank,
+THATTA,122,Thatta,
+TORGHAR,62,Mansehra,"Tor Ghar, split from Mansehra (approx)"
+VEHARI,106,Vehari,
+ZHOB,36,Zhob,

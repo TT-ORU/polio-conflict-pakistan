@@ -1,0 +1,62 @@
+  Primary interaction (Table 3)                              1.133 (1.051 to 1.222)  p = 0.0012
+
+=== B1. districts in and out of the interaction sample ===
+                group  districts  cases_2019_2025  share_of_cases  population_m  cases_per_million_py  districts_with_any_case  violent_events_per_yr_median  violent_events_per_yr_mean
+              outside         21                2           0.006         7.988                 0.036                        2                         0.000                       2.497
+in interaction sample        120              361           0.994       227.823                 0.226                       68                         3.786                      11.626
+ excluded districts by province: {'Azad Kashmir': 8, 'Gilgit-Baltistan': 6, 'Balochistan': 2, 'Khyber-Pakhtunkhwa': 2, 'Federally Administered Tribal Ar': 1, 'Islamabad': 1, 'Sindh': 1}
+ excluded districts with cases: [{'province': 'Gilgit-Baltistan', 'cases': 1, 'name': 'Chilas'}, {'province': 'Islamabad', 'cases': 1, 'name': 'Islamabad'}]
+
+=== B2. targeting rules: 2018-2021 information, 2022-2025 cases ===
+                                             rule  districts  population_share  later_cases  share_of_later_cases  rate_flagged  rate_other  rate_ratio
+                         (a) top violence tertile         39             0.392           90                 0.698         0.245       0.069       3.578
+                        (b) top zero-dose tertile         40             0.129          100                 0.775         0.827       0.036      23.224
+                       (c) both: the paper's rule         19             0.053           78                 0.605         1.588       0.058      27.596
+                           (d) any case 2018-2021         58             0.480          118                 0.915         0.263       0.023      11.598
+       (e) 19 districts with most cases 2018-2021         19             0.166           89                 0.690         0.573       0.051      11.159
+(f) 19 districts with highest incidence 2018-2021         19             0.042           71                 0.550         1.798       0.065      27.766
+                                   (g) (c) or (d)         64             0.488          120                 0.930         0.263       0.019      13.980
+ (h) 19 districts with highest violence 2018-2021         19             0.236           52                 0.403         0.236       0.108       2.187
+          (i) 19 districts with highest zero-dose         19             0.041           54                 0.419         1.423       0.084      17.024
+  joint but no prior case: 6 districts, 2 later cases
+  prior case but not joint: 45 districts, 42 later cases
+
+=== B3a. wild cluster score bootstrap, null imposed (Kline and Santos 2012) ===
+  Rademacher score statistic 3.089; bootstrap p = 0.0004 (B = 9999)
+  Webb       score statistic 3.089; bootstrap p = 0.0002 (B = 9999)
+  asymptotic cluster-robust score test p = 0.0020; Wald p (Table 3) = 0.0012
+
+=== B3b. excluding outbreak years ===
+  excluding 2024 (n = 720, cases = 288)                      1.167 (1.057 to 1.289)  p = 0.0023
+  excluding 2024 and 2025 (n = 600, cases = 258)             1.143 (1.043 to 1.251)  p = 0.0041
+  excluding 2019 and 2020 (n = 600, cases = 130)             1.106 (1.043 to 1.173)  p = 0.0008
+
+=== B4. district covariates ===
+  correlations with zero-dose and district-mean violence (district level):
+      travel_h  log_fac  log_ntl
+zd10      0.43    -0.24    -0.40
+vm10      0.11     0.31     0.23
+  primary: interaction                                       1.133 (1.051 to 1.222)  p = 0.0012 | zero-dose main 1.42 (1.16-1.73)
+  + travel time: interaction                                 1.124 (1.054 to 1.198)  p = 0.0003 | zero-dose main 1.47 (1.20-1.80)
+  + facility density: interaction                            1.126 (1.043 to 1.216)  p = 0.0024 | zero-dose main 1.42 (1.16-1.74)
+  + night-time lights: interaction                           1.135 (1.050 to 1.227)  p = 0.0015 | zero-dose main 1.42 (1.16-1.73)
+  + all three: interaction                                   1.102 (1.035 to 1.173)  p = 0.0023 | zero-dose main 1.48 (1.19-1.85)
+  pre-specified criterion (interaction > 1.05 with all three): met
+
+=== B5. spatial inference ===
+  uniform (pre-specified)  100 km: IRR 1.133 (1.056-1.216) p = 0.0005
+  uniform (pre-specified)  200 km: IRR 1.133 (1.067-1.202) p = 0.0000
+  uniform (pre-specified)  300 km: IRR 1.133 (1.074-1.195) p = 0.0000
+  Bartlett                 100 km: IRR 1.133 (1.062-1.208) p = 0.0001
+  Bartlett                 200 km: IRR 1.133 (1.060-1.210) p = 0.0002
+  Bartlett                 300 km: IRR 1.133 (1.063-1.207) p = 0.0001
+  clustered by division (27 clusters), Wald                  1.133 (1.056 to 1.215)  p = 0.0005
+  clustered by division, wild score bootstrap (Webb): p = 0.0110
+
+=== A1. zero-dose measure: standard age group ===
+  corrected, 12-23 months (primary): interaction             1.133 (1.051 to 1.222)  p = 0.0012 | zero-dose (main model) 1.70 (1.37-2.10)
+  corrected, 12-35 months: interaction                       1.114 (1.047 to 1.186)  p = 0.0007 | zero-dose (main model) 1.68 (1.37-2.06)
+  corrected, 0-35 months: interaction                        1.113 (1.043 to 1.187)  p = 0.0012 | zero-dose (main model) 1.78 (1.44-2.19)
+  previous definition, 0-35 months: interaction              1.097 (1.034 to 1.163)  p = 0.0022 | zero-dose (main model) 1.85 (1.46-2.33)
+
+=== A5. Moran 2021: I = 0.0075, permutation SD 0.0073, p_sim = 0.002, normal p = 0.78; cases = 1

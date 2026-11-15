@@ -1,0 +1,10 @@
+Reproduction check: polio publication package v0.6
+Date (UTC): 2026-10-21 21:58
+A copy of this package was run from scratch (empty outputs/) with run_all.sh (20,000 permutations), then the two
+steps that need the raw ACLED event file (00a, 11; file checksum in environment/restricted_inputs.sha256).
+
+37 files identical to the frozen version; 0 differ or are missing
+  (every table and key CSV to 1e-9, every figure pixel by pixel)
+data/acled_attacks_district_year.csv rebuilt by 00a from the raw ACLED file: byte-identical
+367 pass, 0 fail, 0 missing, 0 skipped (python/99_verify.py: numbers printed in the manuscript)
+checked 448 numbers in 16 tables; 0 unmatched (review4/verify_tables_v05.py: every table cell)

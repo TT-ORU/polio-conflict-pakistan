@@ -1,0 +1,37 @@
+Table S2 and restrictions (IRR per violent event, district mean / deviation)
+ Primary, province + year FE  (n = 931)
+  district mean                                              1.010 (0.994 to 1.026)  p = 0.2378
+  annual deviation                                           1.002 (0.996 to 1.008)  p = 0.5123
+ Excluding Karachi's four districts  (n = 903)
+  district mean                                              1.014 (0.996 to 1.031)  p = 0.1224
+  annual deviation                                           1.003 (0.998 to 1.007)  p = 0.2854
+ Karachi collapsed into one unit  (n = 910)
+  district mean                                              1.010 (0.993 to 1.027)  p = 0.2481
+  annual deviation                                           1.002 (0.996 to 1.008)  p = 0.5117
+ Restricted to 2019-2023  (n = 630)
+  district mean                                              1.015 (0.990 to 1.040)  p = 0.2394
+  annual deviation                                           1.016 (1.000 to 1.032)  p = 0.0514
+ Reservoir provinces only  (n = 616)
+  district mean                                              1.009 (0.993 to 1.026)  p = 0.2590
+  annual deviation                                           1.001 (0.995 to 1.008)  p = 0.6963
+ Negative binomial (province + year FE)
+  alpha = 1, district mean                                   1.016 (0.994 to 1.040)  p = 0.1595
+  alpha = 1, annual deviation                                1.002 (0.992 to 1.012)  p = 0.6779
+  alpha estimated, district mean                             1.024 (0.996 to 1.053)  p = 0.0989
+  alpha estimated, annual deviation                          1.002 (0.989 to 1.016)  p = 0.7495
+  estimated alpha = 4.766
+
+Table S4: interaction, leave one province out
+  drop Balochistan                                           1.149 (1.053 to 1.255)  p = 0.0019
+  drop Federally Administered Tribal Ar                      1.149 (1.019 to 1.295)  p = 0.0237
+  drop Khyber-Pakhtunkhwa                                    1.100 (1.027 to 1.179)  p = 0.0066
+  drop Punjab                                                1.145 (1.055 to 1.242)  p = 0.0012
+  drop Sindh                                                 1.170 (1.057 to 1.294)  p = 0.0024
+  leave one district out, 120 refits: IRR 1.107 to 1.168, max p = 0.0218
+ Stratified by zero-dose tertile, no product term:
+  low zero-dose tertile (38 districts)                       0.745 (0.470 to 1.180)  p = 0.2098
+  mid zero-dose tertile (40 districts)                       0.834 (0.674 to 1.032)  p = 0.0940
+  high zero-dose tertile (40 districts)                      1.149 (0.953 to 1.386)  p = 0.1456
+
+Figure 3B: high/high cell 21 districts, 194 cases, 2.30 per million vs 0.11 elsewhere (20.8-fold)
+  by province: {'Balochistan': 13, 'Khyber-Pakhtunkhwa': 5, 'Federally Administered Tribal Ar': 3}

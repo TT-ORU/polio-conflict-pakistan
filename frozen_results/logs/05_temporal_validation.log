@@ -1,0 +1,17 @@
+Table S7: 19 districts flagged from 2018-2021 data; in 2022-2025 they carried 78 of 129 cases (1.59 vs 0.06 per million, crude RR 27.6)
+  17 of 19 also in the full-period high/high set
+
+Table S8: incremental value over the district's own history (2022-2025 outcome)
+  flag, province + year FE                                   9.405 (4.861 to 18.197)  p = 0.0000   AIC 572.8
+  flag, year FE only                                        27.642 (13.376 to 57.125)  p = 0.0000   AIC 642.1
+  province + year only                                     AIC 672.2
+  prior burden alone, log(1+cases)                           2.734 (2.026 to 3.689)  p = 0.0000   AIC 549.4
+  flag + any prior case                                      6.590 (3.496 to 12.423)  p = 0.0000   AIC 551.4
+    any prior case                                           4.073 (1.849 to 8.974)  p = 0.0005   AIC 551.4
+  flag + log(1+prior cases)                                  3.359 (1.439 to 7.844)  p = 0.0051   AIC 531.8
+    log(1+prior cases)                                       2.042 (1.395 to 2.987)  p = 0.0002   AIC 531.8
+  flag + log(1+prior cases per million)                      2.723 (1.089 to 6.809)  p = 0.0321   AIC 507.8
+    log(1+prior cases per million)                           2.278 (1.423 to 3.648)  p = 0.0006   AIC 507.8
+  flag + both prior terms                                    3.003 (1.193 to 7.556)  p = 0.0195   AIC 504.8
+
+No prior case in 2018-2021: 62 districts, 11 later cases; flagged 2 cases (0.28/m) vs 9 (0.02/m). Too few cases to model: indicative only.

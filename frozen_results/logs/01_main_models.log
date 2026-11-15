@@ -1,0 +1,31 @@
+Table S1 case audit, 2018-2025
+  by year:     {2018: 12, 2019: 147, 2020: 84, 2021: 1, 2022: 20, 2023: 6, 2024: 74, 2025: 31}
+  by province: {'Khyber-Pakhtunkhwa': 143, 'Sindh': 87, 'Balochistan': 69, 'Federally Administered Tribal Ar': 46, 'Punjab': 28, 'Gilgit-Baltistan': 1, 'Islamabad': 1, 'Azad Kashmir': 0} | total 375
+
+Table 2 (IRR per violent event; zero-dose per +10 pp)
+ (c1) Year FE only: 987 district-years
+  district mean                                              1.026 (1.011 to 1.040)  p = 0.0006
+  annual deviation                                           1.000 (0.993 to 1.008)  p = 0.9532
+ (c2) Province + year FE: 931 district-years
+  district mean                                              1.010 (0.994 to 1.026)  p = 0.2378
+  annual deviation                                           1.002 (0.996 to 1.008)  p = 0.5123
+ (c3) + zero-dose: 840 district-years
+  district mean                                              1.014 (1.001 to 1.027)  p = 0.0299
+  annual deviation                                           1.003 (0.995 to 1.010)  p = 0.5138
+  zero-dose per 10 pp                                        1.695 (1.369 to 2.098)  p = 0.0000
+
+Rescaled, per +10 events/yr (column 2):
+  district mean                                              1.103 (0.938 to 1.297)  p = 0.2378
+  annual deviation                                           1.021 (0.959 to 1.088)  p = 0.5123
+  precision bounds: geographic <= +29.7%, dynamic <= +8.8% per 10 events/yr
+
+Conflict x coverage interaction (per +10 events/yr x per +10 pp):
+  interaction                                                1.133 (1.051 to 1.222)  p = 0.0012
+Marginal IRR of +10 violent events/yr, by zero-dose rate:
+  5%                                                         0.704 (0.512 to 0.968)  p = 0.0310
+  10%                                                        0.749 (0.564 to 0.996)  p = 0.0467
+  20%                                                        0.849 (0.682 to 1.056)  p = 0.1421
+  30%                                                        0.962 (0.818 to 1.131)  p = 0.6358
+  40%                                                        1.089 (0.960 to 1.236)  p = 0.1834
+  50%                                                        1.234 (1.083 to 1.406)  p = 0.0016
+  60%                                                        1.398 (1.178 to 1.660)  p = 0.0001

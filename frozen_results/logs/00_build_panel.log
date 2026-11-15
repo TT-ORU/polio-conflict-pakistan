@@ -1,0 +1,4 @@
+national checksum OK: {2018: 12, 2019: 147, 2020: 84, 2021: 1, 2022: 20, 2023: 6, 2024: 74, 2025: 31}
+rebuilt panel: 1128 rows x 19 columns
+  redefined attack columns (violent events only): [('polio_attacks', 114), ('hworker_attacks', 435), ('zero_dose_rate_mics', 960), ('hworker_attacks_lag1', 435), ('hworker_attacks_lag2', 365), ('polio_attacks_lag1', 114)]
+rebuilt panel reproduces the frozen manuscript panel in every other cell of every column

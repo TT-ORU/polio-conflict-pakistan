@@ -1,0 +1,3 @@
+B = 20000; observed cluster-robust t = 3.244
+randomisation p = 0.0149 (Monte Carlo SE 0.0009; 95% MC interval 0.0133 to 0.0166)
+null |t| quantiles: 90% 2.12, 95% 2.57, 99% 3.49

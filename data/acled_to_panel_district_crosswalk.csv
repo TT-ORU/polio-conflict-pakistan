@@ -1,0 +1,163 @@
+acled_district,panel_district_id,panel_district_name,match
+ABBOTTABAD,58,Abbottabad,auto
+ASTORE,45,Chilas,manual
+ATTOCK,107,Attok,manual
+AWARAN,9,Awaran,auto
+BADIN,115,Badin,auto
+BAGH,1,Bagh,auto
+BAHAWALNAGAR,77,Bahawalnagar,auto
+BAHAWALPUR,78,Bahawalpur,auto
+BAJAUR,37,Bajaur,auto
+BAJAUR AGENCY,37,Bajaur,manual
+BALTISTAN,48,Kargil,manual
+BANNU,52,Bannu,auto
+BARKHAN,32,Barkhan,auto
+BATAGRAM,59,Battagram,manual
+BHAKKAR,111,Bhakkar,auto
+BHIMBER,2,Bhimber,auto
+BUNER,71,Buner,auto
+CHAGAI,24,Chagai,auto
+CHAKWAL,108,Chakwal,auto
+CHARSADDA,74,Charsadda,auto
+CHINIOT,85,Jhang,manual
+CHITRAL,66,Chitral,auto
+DADU,116,Dadu,auto
+DERA BUGTI,28,Dera Bugti,auto
+DERA GHAZI KHAN,80,Dera Ghazi Kha,manual
+DERA ISMAIL KHAN,54,Dera Ismail Khan,auto
+DIAMIR,45,Chilas,manual
+FAISALABAD,84,Faisalabad,auto
+FR BANNU,52,Bannu,manual
+FR DERA ISMAIL KHAN,54,Dera Ismail Khan,manual
+FR KOHAT,65,Kohat,manual
+FR PESHAWAR,76,Peshawar,manual
+FR TANK,55,Tank,manual
+GHANCHE,48,Kargil,manual
+GHIZER,46,Gilgit,manual
+GHOTKI,137,Ghotki,auto
+GILGIT,46,Gilgit,auto
+GUJRANWALA,88,Gujranwala 1,manual
+GUJRAT,90,Gujrat,auto
+GWADAR,17,Gwadar,auto
+HAFIZABAD,91,Hafizabad,auto
+HANGU,63,Hangu,auto
+HARIPUR,60,Haripur,auto
+HARNAI,30,Sibi,manual
+HATTIAN BALA,5,Muzaffarabad,manual
+HAVELI,7,Poonch,manual
+HUNZA,46,Gilgit,manual
+HYDERABAD,117,Hyderabad,auto
+ISLAMABAD,51,Islamabad,auto
+JACOBABAD,128,Jakobabad,manual
+JAFFARABAD,21,Jafarabad,manual
+JAMSHORO,118,Jamshoro,auto
+JHAL MAGSI,22,Jhal Magsi,auto
+JHANG,85,Jhang,auto
+JHELUM,109,Jhelum,auto
+KACHHI,20,Bolan,manual
+KALAT,12,Kalat,auto
+KARACHI CITY,123,Karachi Central,Karachi city broadcast
+KARACHI CITY,124,Karachi East,Karachi city broadcast
+KARACHI CITY,125,Karachi South,Karachi city broadcast
+KARACHI CITY,126,Karachi west,Karachi city broadcast
+KARACHI CITY,127,Malir,Karachi city broadcast
+KARAK,64,Karak,auto
+KASHMORE,129,Kashmore,auto
+KASUR,95,Kasur,auto
+KECH,18,Kech,auto
+KHAIRPUR,138,Khairpur,auto
+KHANEWAL,101,Khanewal,auto
+KHARAN,13,Kharan,auto
+KHARMANG,48,Kargil,manual
+KHUSHAB,112,Khushab,auto
+KHUZDAR,14,Khuzdar,auto
+KHYBER,38,Khyber,auto
+KHYBER AGENCY,38,Khyber,manual
+KILLA ABDULLAH,26,Qilla Abdullah,manual
+KILLA SAIFULLAH,35,Qilla Saifullah,manual
+KOHAT,65,Kohat,auto
+KOHISTAN,61,Kohistan,auto
+KOHLU,29,Kholu,manual
+KOTLI,3,Kotli,auto
+KURRAM,39,Kurram,auto
+KURRAM AGENCY,39,Kurram,manual
+LAHORE,96,Lahore,auto
+LAKKI MARWAT,53,Lakki Marwat,auto
+LARKANA,130,Larkana,auto
+LAS BELA,15,Lasbela,auto
+LAYYAH,81,Layyah,auto
+LEHRI,30,Sibi,manual
+LODHRAN,102,Lodhran,auto
+LORALAI,33,Loralai,auto
+LOWER DIR,67,Dir,manual
+MALAKAND PA,68,Malakand P.A.,auto
+MANDI BAHAUDDIN,90,Gujrat,manual
+MANSEHRA,62,Mansehra,auto
+MARDAN,72,Mardan,auto
+MASTUNG,16,Mastung,auto
+MATIARI,119,Matiari,auto
+MIANWALI,113,Mianwali,auto
+MIRPUR,4,Mirpur,auto
+MIRPUR KHAS,132,Mirphurkhas,manual
+MOHMAND,41,Mohmand,auto
+MOHMAND AGENCY,41,Mohmand,manual
+MULTAN,103,Multan,auto
+MUSAKHEL,34,Musakhel,auto
+MUZAFFARABAD,5,Muzaffarabad,auto
+MUZAFFARGARH,82,Muzaffargarh,auto
+NAGAR,46,Gilgit,manual
+NANKANA SAHIB,97,Nankana Sahib,auto
+NAROWAL,92,Narowal 1,manual
+NASIRABAD,23,Nasirabad,auto
+NAUSHAHRO FEROZE,139,Naushahro Firoz,manual
+NEELUM,6,Neelum,auto
+NORTH WAZIRISTAN,42,N. Waziristan,manual
+NORTH WAZIRISTAN AGENCY,42,N. Waziristan,manual
+NOWSHERA,75,Nowshera,auto
+NUSHKI,24,Chagai,manual
+OKARA,98,Okara,auto
+ORAKZAI,43,Orakzai,auto
+ORAKZAI AGENCY,43,Orakzai,manual
+PAKPATTAN,104,Pakpattan,auto
+PANJGUR,19,Panjgur,auto
+PESHAWAR,76,Peshawar,auto
+PISHIN,25,Pishin,auto
+POONCH,7,Poonch,auto
+QAMBAR SHAHDADKOT,130,Larkana,manual
+QUETTA,27,Quetta,auto
+RAHIM YAR KHAN,79,Rahimyar Khan,auto
+RAJANPUR,83,Rajan Pur,auto
+RAWALPINDI,110,Rawalpindi,auto
+SAHIWAL,105,Sahiwal,auto
+SANGHAR,134,Sanghar,auto
+SARGODHA,114,Sargodha,auto
+SHAHEED BENAZIRABAD,140,Nawab Shah,manual
+SHANGLA,69,Shangla,auto
+SHEERANI,36,Zhob,manual
+SHEIKHUPURA,100,Sheikhupura,auto
+SHIGAR,48,Kargil,manual
+SHIKARPUR,131,Shikarpur,auto
+SIALKOT,94,Sialkot,auto
+SIBI,30,Sibi,auto
+SKARDU,48,Kargil,manual
+SOHBATPUR,21,Jafarabad,manual
+SOUTH WAZIRISTAN,44,S. Waziristan,manual
+SOUTH WAZIRISTAN AGENCY,44,S. Waziristan,manual
+SUDHANOTI,8,Sudhnati,manual
+SUJAWAL,122,Thatta,manual
+SUKKUR,141,Sukkur,auto
+SWABI,73,Swabi,auto
+SWAT,70,Swat,auto
+TANDO ALLAH YAR,120,Tando Allahyar,auto
+TANDO MUHAMMAD KHAN,121,Tando M. Khan,manual
+TANK,55,Tank,auto
+THARPARKAR,133,Mithi,manual
+THATTA,122,Thatta,auto
+TOBA TEK SINGH,86,Toba Tek Singh,auto
+TOR GHAR,62,Mansehra,manual
+UMERKOT,135,Umerkot,auto
+UPPER DIR,67,Dir,manual
+VEHARI,106,Vehari,auto
+WASHUK,13,Kharan,manual
+ZHOB,36,Zhob,auto
+ZIARAT,31,Ziarat,auto

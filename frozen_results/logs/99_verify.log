@@ -1,0 +1,232 @@
+Checked 363 numbers printed in the manuscript against this run.
+
+  FAIL  t2_c3_vm1                                manuscript 1.010    now 1.0142   -> Table 2 col 3
+  FAIL  t2_c3_vm1_lo                             manuscript 0.999    now 1.0014   -> Table 2 col 3
+  FAIL  t2_c3_vm1_hi                             manuscript 1.022    now 1.0272   -> Table 2 col 3
+  FAIL  t2_c3_vd1_lo                             manuscript 0.992    now 0.9950   -> Table 2 col 3
+  FAIL  t2_c3_vd1_hi                             manuscript 1.014    now 1.0101   -> Table 2 col 3
+  FAIL  t2_c3_zd10                               manuscript 1.83     now 1.6950   -> Table 2 col 3; Abstract; Results P34
+  FAIL  t2_c3_zd10_lo                            manuscript 1.45     now 1.3691   -> Table 2 col 3; Abstract
+  FAIL  t2_c3_zd10_hi                            manuscript 2.32     now 2.0984   -> Table 2 col 3; Abstract
+  FAIL  int                                      manuscript 1.098    now 1.1329   -> Results P34; Table 3; Table S4; Abstract (1.10)
+  FAIL  int_lo                                   manuscript 1.035    now 1.0506   -> Results P34; Table 3
+  FAIL  int_hi                                   manuscript 1.166    now 1.2216   -> Results P34; Table 3
+  FAIL  int_p                                    manuscript 0.002    now 0.0012   -> Results P34; Table 3
+  FAIL  marg5                                    manuscript 0.843    now 0.7039   -> Table 3; Table S3
+  FAIL  marg5_lo                                 manuscript 0.680    now 0.5117   -> Table 3; Table S3
+  FAIL  marg5_hi                                 manuscript 1.044    now 0.9684   -> Table 3; Table S3
+  FAIL  marg5_p                                  manuscript 0.12     now 0.0310   -> Table 3
+  FAIL  marg10                                   manuscript 0.883    now 0.7492   -> Table 3; Table S3; Abstract (0.88); Results
+  FAIL  marg10_lo                                manuscript 0.730    now 0.5637   -> Table 3; Table S3
+  FAIL  marg10_hi                                manuscript 1.069    now 0.9958   -> Table 3; Table S3
+  FAIL  marg10_p                                 manuscript 0.20     now 0.0467   -> Table 3
+  FAIL  marg20                                   manuscript 0.970    now 0.8488   -> Table 3; Table S3
+  FAIL  marg20_lo                                manuscript 0.834    now 0.6820   -> Table 3; Table S3
+  FAIL  marg20_hi                                manuscript 1.129    now 1.0565   -> Table 3; Table S3
+  FAIL  marg20_p                                 manuscript 0.70     now 0.1421   -> Table 3 (corrected from 0.69; see README)
+  FAIL  marg30                                   manuscript 1.066    now 0.9616   -> Table 3; Table S3
+  FAIL  marg30_lo                                manuscript 0.937    now 0.8179   -> Table 3; Table S3
+  FAIL  marg30_hi                                manuscript 1.212    now 1.1307   -> Table 3; Table S3
+  FAIL  marg30_p                                 manuscript 0.33     now 0.6358   -> Table 3
+  FAIL  marg40                                   manuscript 1.170    now 1.0894   -> Table 3; Table S3; Abstract (1.17); Results
+  FAIL  marg40_lo                                manuscript 1.026    now 0.9603   -> Table 3; Table S3
+  FAIL  marg40_hi                                manuscript 1.335    now 1.2360   -> Table 3; Table S3
+  FAIL  marg40_p                                 manuscript 0.019    now 0.1834   -> Table 3
+  FAIL  marg50                                   manuscript 1.285    now 1.2342   -> Table 3; Table S3; Results (1.29)
+  FAIL  marg50_lo                                manuscript 1.097    now 1.0833   -> Table 3; Table S3
+  FAIL  marg50_hi                                manuscript 1.506    now 1.4062   -> Table 3; Table S3
+  FAIL  marg60                                   manuscript 1.412    now 1.3983   -> Table 3; Table S3
+  FAIL  marg60_lo                                manuscript 1.156    now 1.1778   -> Table 3; Table S3
+  FAIL  marg60_hi                                manuscript 1.724    now 1.6601   -> Table 3; Table S3
+  FAIL  marg60_p                                 manuscript 0.001    now 0.0001   -> Table 3
+  FAIL  lopo_Balochis                            manuscript 1.102    now 1.1493   -> Table S4; Results
+  FAIL  lopo_Balochis_p                          manuscript 0.037    now 0.0019   -> Table S4
+  FAIL  lopo_Federall                            manuscript 1.123    now 1.1485   -> Table S4; Results
+  FAIL  lopo_Federall_p                          manuscript 0.047    now 0.0237   -> Table S4
+  FAIL  lopo_Khyber-P                            manuscript 1.121    now 1.1002   -> Table S4
+  FAIL  lopo_Khyber-P_p                          manuscript 0.0002   now 0.0066   -> Table S4
+  FAIL  lopo_Punjab                              manuscript 1.110    now 1.1447   -> Table S4
+  FAIL  lopo_Punjab_p                            manuscript 0.0009   now 0.0012   -> Table S4
+  FAIL  lopo_Sindh                               manuscript 1.080    now 1.1699   -> Table S4; Results
+  FAIL  lopo_Sindh_p                             manuscript 0.016    now 0.0024   -> Table S4
+  FAIL  lodo_min                                 manuscript 1.089    now 1.1074   -> Table S4; Results
+  FAIL  lodo_max                                 manuscript 1.116    now 1.1681   -> Table S4; Results
+  FAIL  lodo_maxp                                manuscript 0.050    now 0.0218   -> Table S4; Results
+  FAIL  strat_low                                manuscript 0.911    now 0.7448   -> Table S4; Results
+  FAIL  strat_low_lo                             manuscript 0.539    now 0.4700   -> Table S4; Results
+  FAIL  strat_low_hi                             manuscript 1.541    now 1.1804   -> Table S4; Results
+  FAIL  strat_low_p                              manuscript 0.73     now 0.2098   -> Table S4
+  FAIL  strat_mid                                manuscript 0.769    now 0.8336   -> Table S4; Results
+  FAIL  strat_mid_lo                             manuscript 0.579    now 0.6737   -> Table S4; Results
+  FAIL  strat_mid_hi                             manuscript 1.022    now 1.0315   -> Table S4; Results
+  FAIL  strat_mid_p                              manuscript 0.070    now 0.0940   -> Table S4
+  FAIL  strat_high                               manuscript 1.249    now 1.1493   -> Table S4; Results
+  FAIL  strat_high_lo                            manuscript 1.026    now 0.9529   -> Table S4; Results
+  FAIL  strat_high_hi                            manuscript 1.522    now 1.3861   -> Table S4; Results
+  FAIL  strat_high_p                             manuscript 0.027    now 0.1456   -> Table S4; Results
+  FAIL  grid_hh_districts                        manuscript 20       now 21.0000   -> Abstract; Results; Figure 3B; Figure 4
+  FAIL  grid_hh_cases                            manuscript 195      now 194.0000   -> Abstract; Results; Figure 3B
+  FAIL  grid_hh_rate                             manuscript 1.82     now 2.3029   -> Results; Figure 3B; Abstract (1.8)
+  FAIL  grid_fold                                manuscript 16       now 20.8298   -> Results (16-fold)
+  FAIL  grid_max_other                           manuscript 0.5      now 0.5940   -> Results (no other cell exceeded 0.5)
+  FAIL  ri_p                                     manuscript 0.046    now 0.0149   -> Abstract; Results P34; Table 3; Table S4; Limitations
+  FAIL  h1_vm10                                  manuscript 1.051    now 1.0665   -> Table S6
+  FAIL  h1_vm10_lo                               manuscript 0.914    now 0.9163   -> Table S6
+  FAIL  h1_vm10_hi                               manuscript 1.208    now 1.2412   -> Table S6
+  FAIL  h1_vd10                                  manuscript 1.212    now 1.2032   -> Table S6; Results P40 (1.21)
+  FAIL  h1_vd10_lo                               manuscript 1.020    now 1.0074   -> Table S6; Results
+  FAIL  h1_vd10_hi                               manuscript 1.439    now 1.4370   -> Table S6; Results
+  FAIL  h1_vd10_p                                manuscript 0.029    now 0.0413   -> Table S6; Results
+  FAIL  h1_zd10                                  manuscript 1.348    now 1.2515   -> Table S6
+  FAIL  h1_zd10_lo                               manuscript 1.113    now 1.0747   -> Table S6
+  FAIL  h1_zd10_hi                               manuscript 1.633    now 1.4573   -> Table S6
+  FAIL  h1_int                                   manuscript 1.046    now 1.0342   -> Table S6; Limitations (1.05)
+  FAIL  h1_int_p                                 manuscript 0.19     now 0.2933   -> Table S6; Limitations
+  FAIL  h2_vm10                                  manuscript 1.112    now 1.1612   -> Table S6
+  FAIL  h2_vm10_lo                               manuscript 0.929    now 0.9627   -> Table S6
+  FAIL  h2_vm10_hi                               manuscript 1.331    now 1.4006   -> Table S6
+  FAIL  h2_vd10                                  manuscript 0.846    now 0.8357   -> Table S6; Results (0.85)
+  FAIL  h2_vd10_lo                               manuscript 0.684    now 0.6730   -> Table S6; Results
+  FAIL  h2_vd10_hi                               manuscript 1.048    now 1.0379   -> Table S6; Results
+  FAIL  h2_zd10                                  manuscript 1.534    now 1.3989   -> Table S6
+  FAIL  h2_zd10_lo                               manuscript 1.240    now 1.1707   -> Table S6
+  FAIL  h2_zd10_hi                               manuscript 1.897    now 1.6717   -> Table S6
+  FAIL  tv_cases_flag                            manuscript 83       now 78.0000   -> Abstract; Results; Table S7
+  FAIL  tv_cases_rest                            manuscript 46       now 51.0000   -> Table S7
+  FAIL  tv_py_flag                               manuscript 69.5     now 49.1043   -> Table S7
+  FAIL  tv_py_rest                               manuscript 865.6    now 886.0072   -> Table S7
+  FAIL  tv_rate_flag                             manuscript 1.19     now 1.5885   -> Abstract; Results; Table S7
+  FAIL  tv_rate_rest                             manuscript 0.05     now 0.0576   -> Abstract; Results; Table S7
+  FAIL  tv_crude_rr                              manuscript 22.5     now 27.5957   -> Results; Table S7
+  FAIL  tv_overlap                               manuscript 16       now 17.0000   -> Results; Table S7
+  FAIL  m_py                                     manuscript 7.11     now 9.4054   -> Abstract; Results; Table S7; Table S8
+  FAIL  m_py_lo                                  manuscript 3.69     now 4.8614   -> Abstract; Results; Table S7; Table S8
+  FAIL  m_py_hi                                  manuscript 13.69    now 18.1968   -> Abstract; Results; Table S7; Table S8
+  FAIL  m_y                                      manuscript 22.49    now 27.6421   -> Table S7
+  FAIL  m_y_lo                                   manuscript 9.81     now 13.3757   -> Table S7
+  FAIL  m_y_hi                                   manuscript 51.54    now 57.1250   -> Table S7
+  FAIL  m_py_aic                                 manuscript 575.8    now 572.7638   -> Results; Table S8
+  FAIL  m_any_flag                               manuscript 5.03     now 6.5902   -> Table S8
+  FAIL  m_any_flag_lo                            manuscript 2.66     now 3.4959   -> Table S8
+  FAIL  m_any_flag_hi                            manuscript 9.49     now 12.4234   -> Table S8
+  FAIL  m_any_hist                               manuscript 3.75     now 4.0730   -> Table S8
+  FAIL  m_any_hist_lo                            manuscript 1.77     now 1.8486   -> Table S8
+  FAIL  m_any_hist_hi                            manuscript 7.94     now 8.9740   -> Table S8
+  FAIL  m_cnt_flag                               manuscript 3.24     now 3.3591   -> Abstract (tracked version); Results; Table S8
+  FAIL  m_cnt_flag_lo                            manuscript 1.67     now 1.4386   -> Results; Table S8
+  FAIL  m_cnt_flag_hi                            manuscript 6.26     now 7.8438   -> Results; Table S8
+  FAIL  m_cnt_hist                               manuscript 2.08     now 2.0416   -> Results; Table S8
+  FAIL  m_cnt_hist_lo                            manuscript 1.48     now 1.3953   -> Results; Table S8
+  FAIL  m_cnt_hist_hi                            manuscript 2.93     now 2.9871   -> Results; Table S8
+  FAIL  m_cnt_flag_aic                           manuscript 527.6    now 531.7598   -> Results; Table S8
+  FAIL  m_rate_flag_lo                           manuscript 1.33     now 1.0892   -> Results; trimmed Abstract
+  FAIL  m_rate_flag_hi                           manuscript 5.59     now 6.8086   -> Results; trimmed Abstract
+  FAIL  m_rate_flag_p                            manuscript 0.006    now 0.0321   -> Results
+  FAIL  m_rate_hist                              manuscript 2.29     now 2.2783   -> Results
+  FAIL  m_rate_hist_lo                           manuscript 1.48     now 1.4231   -> Results
+  FAIL  m_rate_hist_hi                           manuscript 3.54     now 3.6476   -> Results
+  FAIL  m_rate_flag_aic                          manuscript 504.5    now 507.7900   -> Results
+  FAIL  m_both_flag                              manuscript 2.87     now 3.0026   -> Results
+  FAIL  m_both_flag_lo                           manuscript 1.39     now 1.1933   -> Results
+  FAIL  m_both_flag_hi                           manuscript 5.92     now 7.5556   -> Results
+  FAIL  noprior_rate_flag                        manuscript 0.49     now 0.2790   -> Results (corrected from 0.65; see README)
+  FAIL  pred_ll                                  manuscript 0.09     now 0.0728   -> Table 4; Results
+  FAIL  pred_ll_lo                               manuscript 0.06     now 0.0447   -> Table 4
+  FAIL  pred_ll_hi                               manuscript 0.18     now 0.1514   -> Table 4
+  FAIL  pred_hl                                  manuscript 0.06     now 0.0292   -> Table 4; Results
+  FAIL  pred_hl_lo                               manuscript 0.04     now 0.0149   -> Table 4
+  FAIL  pred_hl_hi                               manuscript 0.12     now 0.0714   -> Table 4
+  FAIL  pred_lh                                  manuscript 0.32     now 0.4292   -> Table 4; Results
+  FAIL  pred_lh_lo                               manuscript 0.22     now 0.2831   -> Table 4
+  FAIL  pred_lh_hi                               manuscript 0.54     now 0.8208   -> Table 4
+  FAIL  pred_hh                                  manuscript 0.45     now 0.8120   -> Table 4; Results
+  FAIL  pred_hh_lo                               manuscript 0.32     now 0.4897   -> Table 4
+  FAIL  pred_hh_hi                               manuscript 0.80     now 1.7398   -> Table 4
+  FAIL  c_viol_lowzd                             manuscript 0.69     now 0.4034   -> Results
+  FAIL  c_viol_lowzd_lo                          manuscript 0.42     now 0.1776   -> Results
+  FAIL  c_viol_lowzd_hi                          manuscript 1.14     now 0.8987   -> Results
+  FAIL  c_viol_highzd                            manuscript 1.40     now 1.8894   -> Results
+  FAIL  c_viol_highzd_lo                         manuscript 1.01     now 1.3314   -> Results
+  FAIL  c_viol_highzd_hi                         manuscript 1.94     now 2.6973   -> Results
+  FAIL  c_both                                   manuscript 4.8      now 11.1026   -> Results
+  FAIL  c_both_lo                                manuscript 2.1      now 3.6412   -> Results
+  FAIL  c_both_hi                                manuscript 11.3     now 33.2532   -> Results
+  FAIL  s1_vm10xzd10                             manuscript 1.131    now 1.1535   -> Results; Table S9
+  FAIL  s1_vm10xzd10_lo                          manuscript 1.045    now 1.0688   -> Results; Table S9
+  FAIL  s1_vm10xzd10_hi                          manuscript 1.225    now 1.2450   -> Results; Table S9
+  FAIL  s1_nm10                                  manuscript 1.236    now 1.2000   -> Results; Table S9
+  FAIL  s1_nm10_lo                               manuscript 0.922    now 0.9152   -> Results; Table S9
+  FAIL  s1_nm10_hi                               manuscript 1.658    now 1.5733   -> Results; Table S9
+  FAIL  s1_nd10                                  manuscript 0.936    now 1.0156   -> Results; Table S9
+  FAIL  s1_nd10_lo                               manuscript 0.654    now 0.8257   -> Results; Table S9
+  FAIL  s1_nd10_hi                               manuscript 1.342    now 1.2492   -> Results; Table S9
+  FAIL  s2_vm10xzd10                             manuscript 1.133    now 1.1533   -> Results; Table S9
+  FAIL  s2_vm10xzd10_lo                          manuscript 1.047    now 1.0698   -> Results; Table S9
+  FAIL  s2_vm10xzd10_hi                          manuscript 1.226    now 1.2433   -> Results; Table S9
+  FAIL  s2_nbc                                   manuscript 1.148    now 1.1605   -> Results; Table S9
+  FAIL  s2_nbc_lo                                manuscript 0.722    now 0.7276   -> Results; Table S9
+  FAIL  s2_nbc_hi                                manuscript 1.825    now 1.8509   -> Results; Table S9
+  FAIL  moran_2019                               manuscript -0.01    now 0.0338   -> Table S9 note
+  FAIL  moran_2020                               manuscript 0.24     now 0.1852   -> Results; Table S9 note
+  FAIL  moran_2021                               manuscript 0.00     now 0.0075   -> Table S9 note
+  FAIL  moran_2024                               manuscript 0.33     now 0.3489   -> Results; Table S9 note
+  FAIL  moran_2025                               manuscript 0.06     now 0.0549   -> Table S9 note
+  FAIL  inf_wb_rad_p                             manuscript 0.004    now 0.0004   -> Results; Table S10
+  FAIL  inf_wb_webb_p                            manuscript 0.005    now 0.0002   -> Results; Table S10
+  FAIL  inf_ex2024                               manuscript 1.108    now 1.1669   -> Results; Table S10
+  FAIL  inf_ex2024_lo                            manuscript 1.031    now 1.0566   -> Results; Table S10
+  FAIL  inf_ex2024_hi                            manuscript 1.191    now 1.2886   -> Results; Table S10
+  FAIL  inf_ex202425                             manuscript 1.088    now 1.1425   -> Results; Table S10
+  FAIL  inf_ex202425_lo                          manuscript 1.009    now 1.0431   -> Results; Table S10
+  FAIL  inf_ex202425_hi                          manuscript 1.174    now 1.2514   -> Results; Table S10
+  FAIL  cov_all                                  manuscript 1.079    now 1.1020   -> Results; Table S10
+  FAIL  cov_all_lo                               manuscript 1.020    now 1.0353   -> Results; Table S10
+  FAIL  cov_all_hi                               manuscript 1.141    now 1.1729   -> Results; Table S10
+  FAIL  sp_bartlett300km                         manuscript 1.098    now 1.1329   -> Results; Table S10
+  FAIL  sp_bartlett300km_lo                      manuscript 1.054    now 1.0634   -> Results; Table S10
+  FAIL  sp_bartlett300km_hi                      manuscript 1.144    now 1.2070   -> Results; Table S10
+  FAIL  inf_ex201920                             manuscript 1.092    now 1.1057   -> Table S10
+  FAIL  inf_ex201920_lo                          manuscript 1.037    now 1.0426   -> Table S10
+  FAIL  inf_ex201920_hi                          manuscript 1.150    now 1.1727   -> Table S10
+  FAIL  cov_travel                               manuscript 1.098    now 1.1240   -> Table S10
+  FAIL  cov_travel_lo                            manuscript 1.036    now 1.0542   -> Table S10
+  FAIL  cov_travel_hi                            manuscript 1.163    now 1.1983   -> Table S10
+  FAIL  cov_fac                                  manuscript 1.077    now 1.1260   -> Table S10
+  FAIL  cov_fac_lo                               manuscript 1.019    now 1.0430   -> Table S10
+  FAIL  cov_fac_hi                               manuscript 1.139    now 1.2156   -> Table S10
+  FAIL  cov_ntl                                  manuscript 1.081    now 1.1349   -> Table S10
+  FAIL  cov_ntl_lo                               manuscript 1.023    now 1.0496   -> Table S10
+  FAIL  cov_ntl_hi                               manuscript 1.144    now 1.2271   -> Table S10
+  FAIL  zd_1235                                  manuscript 1.107    now 1.1143   -> Table S10
+  FAIL  zd_1235_lo                               manuscript 1.040    now 1.0468   -> Table S10
+  FAIL  zd_1235_hi                               manuscript 1.177    now 1.1861   -> Table S10
+  FAIL  sp_bartlett100km                         manuscript 1.098    now 1.1329   -> Table S10
+  FAIL  sp_bartlett100km_lo                      manuscript 1.045    now 1.0624   -> Table S10
+  FAIL  sp_bartlett100km_hi                      manuscript 1.154    now 1.2081   -> Table S10
+  FAIL  sp_bartlett200km                         manuscript 1.098    now 1.1329   -> Table S10
+  FAIL  sp_bartlett200km_lo                      manuscript 1.048    now 1.0604   -> Table S10
+  FAIL  sp_bartlett200km_hi                      manuscript 1.151    now 1.2103   -> Table S10
+  FAIL  sp_divisionclusters27wald                manuscript 1.098    now 1.1329   -> Table S10
+  FAIL  sp_divisionclusters27wald_lo             manuscript 1.041    now 1.0564   -> Table S10
+  FAIL  sp_divisionclusters27wald_hi             manuscript 1.159    now 1.2150   -> Table S10
+  FAIL  sp_divisionclusters27wildscorebootstrapwebb_p manuscript 0.026    now 0.0110   -> Results; Table S10
+  FAIL  moran21_p_norm                           manuscript 0.85     now 0.7814   -> Table S9 note
+  FAIL  tg1_share                                manuscript 76.7     now 77.5194   -> Table S11
+  FAIL  tg1_popshare                             manuscript 17.2     now 12.9286   -> Table S11
+  FAIL  tg1_rr                                   manuscript 15.8     now 23.2235   -> Table S11
+  FAIL  tg2_share                                manuscript 64.3     now 60.4651   -> Table S11
+  FAIL  tg2_popshare                             manuscript 7.4      now 5.2512   -> Table S11
+  FAIL  tg2_rr                                   manuscript 22.5     now 27.5957   -> Table S11
+  FAIL  tg6_districts                            manuscript 62       now 64.0000   -> Table S11
+  FAIL  tg6_popshare                             manuscript 48.5     now 48.8156   -> Table S11
+  FAIL  tg6_rr                                   manuscript 14.2     now 13.9803   -> Table S11
+  FAIL  tg8_share                                manuscript 53.5     now 41.8605   -> Table S11
+  FAIL  tg8_popshare                             manuscript 5.6      now 4.0577   -> Table S11
+  FAIL  tg8_rr                                   manuscript 19.5     now 17.0242   -> Table S11
+  FAIL  tg2_share                                manuscript 64       now 60.4651   -> Results (percent, rounded)
+  FAIL  tg8_share                                manuscript 53       now 41.8605   -> Results (percent, rounded)
+  MISSING  zd_1223                               (no script produced it)  -> Results; Table S10
+  MISSING  zd_1223_lo                            (no script produced it)  -> Results; Table S10
+  MISSING  zd_1223_hi                            (no script produced it)  -> Results; Table S10
+
+135 pass, 225 fail, 3 missing, 0 skipped

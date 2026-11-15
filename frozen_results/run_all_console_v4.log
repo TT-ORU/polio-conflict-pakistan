@@ -1,0 +1,456 @@
+>>> 00_build_panel
+national checksum OK: {2018: 12, 2019: 147, 2020: 84, 2021: 1, 2022: 20, 2023: 6, 2024: 74, 2025: 31}
+rebuilt panel: 1128 rows x 19 columns
+  redefined attack columns (violent events only): [('polio_attacks', 114), ('hworker_attacks', 435), ('zero_dose_rate_mics', 960), ('hworker_attacks_lag1', 435), ('hworker_attacks_lag2', 365), ('polio_attacks_lag1', 114)]
+rebuilt panel reproduces the frozen manuscript panel in every other cell of every column
+>>> 01_main_models
+Table S1 case audit, 2018-2025
+  by year:     {2018: 12, 2019: 147, 2020: 84, 2021: 1, 2022: 20, 2023: 6, 2024: 74, 2025: 31}
+  by province: {'Khyber-Pakhtunkhwa': 143, 'Sindh': 87, 'Balochistan': 69, 'Federally Administered Tribal Ar': 46, 'Punjab': 28, 'Gilgit-Baltistan': 1, 'Islamabad': 1, 'Azad Kashmir': 0} | total 375
+
+Table 2 (IRR per violent event; zero-dose per +10 pp)
+ (c1) Year FE only: 987 district-years
+  district mean                                              1.026 (1.011 to 1.040)  p = 0.0006
+  annual deviation                                           1.000 (0.993 to 1.008)  p = 0.9532
+ (c2) Province + year FE: 931 district-years
+  district mean                                              1.010 (0.994 to 1.026)  p = 0.2378
+  annual deviation                                           1.002 (0.996 to 1.008)  p = 0.5123
+ (c3) + zero-dose: 840 district-years
+  district mean                                              1.014 (1.001 to 1.027)  p = 0.0299
+  annual deviation                                           1.003 (0.995 to 1.010)  p = 0.5138
+  zero-dose per 10 pp                                        1.695 (1.369 to 2.098)  p = 0.0000
+
+Rescaled, per +10 events/yr (column 2):
+  district mean                                              1.103 (0.938 to 1.297)  p = 0.2378
+  annual deviation                                           1.021 (0.959 to 1.088)  p = 0.5123
+  precision bounds: geographic <= +29.7%, dynamic <= +8.8% per 10 events/yr
+
+Conflict x coverage interaction (per +10 events/yr x per +10 pp):
+  interaction                                                1.133 (1.051 to 1.222)  p = 0.0012
+Marginal IRR of +10 violent events/yr, by zero-dose rate:
+  5%                                                         0.704 (0.512 to 0.968)  p = 0.0310
+  10%                                                        0.749 (0.564 to 0.996)  p = 0.0467
+  20%                                                        0.849 (0.682 to 1.056)  p = 0.1421
+  30%                                                        0.962 (0.818 to 1.131)  p = 0.6358
+  40%                                                        1.089 (0.960 to 1.236)  p = 0.1834
+  50%                                                        1.234 (1.083 to 1.406)  p = 0.0016
+  60%                                                        1.398 (1.178 to 1.660)  p = 0.0001
+>>> 02_robustness
+Table S2 and restrictions (IRR per violent event, district mean / deviation)
+ Primary, province + year FE  (n = 931)
+  district mean                                              1.010 (0.994 to 1.026)  p = 0.2378
+  annual deviation                                           1.002 (0.996 to 1.008)  p = 0.5123
+ Excluding Karachi's four districts  (n = 903)
+  district mean                                              1.014 (0.996 to 1.031)  p = 0.1224
+  annual deviation                                           1.003 (0.998 to 1.007)  p = 0.2854
+ Karachi collapsed into one unit  (n = 910)
+  district mean                                              1.010 (0.993 to 1.027)  p = 0.2481
+  annual deviation                                           1.002 (0.996 to 1.008)  p = 0.5117
+ Restricted to 2019-2023  (n = 630)
+  district mean                                              1.015 (0.990 to 1.040)  p = 0.2394
+  annual deviation                                           1.016 (1.000 to 1.032)  p = 0.0514
+ Reservoir provinces only  (n = 616)
+  district mean                                              1.009 (0.993 to 1.026)  p = 0.2590
+  annual deviation                                           1.001 (0.995 to 1.008)  p = 0.6963
+ Negative binomial (province + year FE)
+  alpha = 1, district mean                                   1.016 (0.994 to 1.040)  p = 0.1595
+  alpha = 1, annual deviation                                1.002 (0.992 to 1.012)  p = 0.6779
+  alpha estimated, district mean                             1.024 (0.996 to 1.053)  p = 0.0989
+  alpha estimated, annual deviation                          1.002 (0.989 to 1.016)  p = 0.7495
+  estimated alpha = 4.766
+
+Table S4: interaction, leave one province out
+  drop Balochistan                                           1.149 (1.053 to 1.255)  p = 0.0019
+  drop Federally Administered Tribal Ar                      1.149 (1.019 to 1.295)  p = 0.0237
+  drop Khyber-Pakhtunkhwa                                    1.100 (1.027 to 1.179)  p = 0.0066
+  drop Punjab                                                1.145 (1.055 to 1.242)  p = 0.0012
+  drop Sindh                                                 1.170 (1.057 to 1.294)  p = 0.0024
+  leave one district out, 120 refits: IRR 1.107 to 1.168, max p = 0.0218
+ Stratified by zero-dose tertile, no product term:
+  low zero-dose tertile (38 districts)                       0.745 (0.470 to 1.180)  p = 0.2098
+  mid zero-dose tertile (40 districts)                       0.834 (0.674 to 1.032)  p = 0.0940
+  high zero-dose tertile (40 districts)                      1.149 (0.953 to 1.386)  p = 0.1456
+
+Figure 3B: high/high cell 21 districts, 194 cases, 2.30 per million vs 0.11 elsewhere (20.8-fold)
+  by province: {'Balochistan': 13, 'Khyber-Pakhtunkhwa': 5, 'Federally Administered Tribal Ar': 3}
+>>> 03_randomisation_inference
+B = 20000; observed cluster-robust t = 3.244
+randomisation p = 0.0149 (Monte Carlo SE 0.0009; 95% MC interval 0.0133 to 0.0166)
+null |t| quantiles: 90% 2.12, 95% 2.57, 99% 3.49
+>>> 04_hurdle_and_temporal_order
+Hurdle part 1: any case (126 of 840 district-years), OR
+  violence, district mean, per 10/yr                         1.066 (0.916 to 1.241)  p = 0.4060
+  violence, annual deviation, per 10/yr                      1.203 (1.007 to 1.437)  p = 0.0413
+  zero-dose, per 10 pp                                       1.251 (1.075 to 1.457)  p = 0.0039
+  interaction                                                1.034 (0.971 to 1.101)  p = 0.2933
+Hurdle part 2: count given >0 (126 district-years), zero-truncated NB, IRR
+  violence, district mean, per 10/yr                         1.161 (0.963 to 1.401)  p = 0.1182
+  violence, annual deviation, per 10/yr                      0.836 (0.673 to 1.038)  p = 0.1044
+  zero-dose, per 10 pp                                       1.399 (1.171 to 1.672)  p = 0.0002
+
+Temporal ordering (polio-campaign attacks: 38 in 2018-2021, 80 in 2022-2024)
+  polio-campaign attacks: early exposure -> late cases       2.836 (0.848 to 9.482)  p = 0.0906
+  polio-campaign attacks: late exposure -> early cases       1.731 (1.183 to 2.534)  p = 0.0048
+  health-worker attacks: early exposure -> late cases        1.379 (0.515 to 3.691)  p = 0.5226
+  health-worker attacks: late exposure -> early cases        1.468 (1.042 to 2.069)  p = 0.0282
+  violent events, per 10/yr: early exposure -> late cases    1.308 (0.946 to 1.808)  p = 0.1039
+  violent events, per 10/yr: late exposure -> early cases    1.052 (0.947 to 1.168)  p = 0.3443
+>>> 05_temporal_validation
+Table S7: 19 districts flagged from 2018-2021 data; in 2022-2025 they carried 78 of 129 cases (1.59 vs 0.06 per million, crude RR 27.6)
+  17 of 19 also in the full-period high/high set
+
+Table S8: incremental value over the district's own history (2022-2025 outcome)
+  flag, province + year FE                                   9.405 (4.861 to 18.197)  p = 0.0000   AIC 572.8
+  flag, year FE only                                        27.642 (13.376 to 57.125)  p = 0.0000   AIC 642.1
+  province + year only                                     AIC 672.2
+  prior burden alone, log(1+cases)                           2.734 (2.026 to 3.689)  p = 0.0000   AIC 549.4
+  flag + any prior case                                      6.590 (3.496 to 12.423)  p = 0.0000   AIC 551.4
+    any prior case                                           4.073 (1.849 to 8.974)  p = 0.0005   AIC 551.4
+  flag + log(1+prior cases)                                  3.359 (1.439 to 7.844)  p = 0.0051   AIC 531.8
+    log(1+prior cases)                                       2.042 (1.395 to 2.987)  p = 0.0002   AIC 531.8
+  flag + log(1+prior cases per million)                      2.723 (1.089 to 6.809)  p = 0.0321   AIC 507.8
+    log(1+prior cases per million)                           2.278 (1.423 to 3.648)  p = 0.0006   AIC 507.8
+  flag + both prior terms                                    3.003 (1.193 to 7.556)  p = 0.0195   AIC 504.8
+
+No prior case in 2018-2021: 62 districts, 11 later cases; flagged 2 cases (0.28/m) vs 9 (0.02/m). Too few cases to model: indicative only.
+>>> 06_predicted_rates
+Tertile medians: violence 0.9 / 26.1 events/yr; zero-dose 4.2% / 53.3%
+  Low violence, low zero-dose      0.07 (0.04 to 0.15) per million person-years
+  High violence, low zero-dose     0.03 (0.01 to 0.07) per million person-years
+  Low violence, high zero-dose     0.43 (0.28 to 0.82) per million person-years
+  High violence, high zero-dose    0.81 (0.49 to 1.74) per million person-years
+Contrasts:
+  high vs low violence, low zero-dose      0.40 (0.18 to 0.90)
+  high vs low violence, high zero-dose     1.89 (1.33 to 2.70)
+  both high vs both low                    11.10 (3.64 to 33.25)
+>>> 07_spatial
+Queen contiguity: median 5 neighbours (range 1-11), 0 islands
+ no neighbour terms:
+  vm10:zd10                                                  1.133 (1.051 to 1.222)  p = 0.0012
+ with neighbour violence:
+  vm10:zd10                                                  1.154 (1.069 to 1.245)  p = 0.0002
+  nm10                                                       1.200 (0.915 to 1.573)  p = 0.1872
+  nd10                                                       1.016 (0.826 to 1.249)  p = 0.8836
+ with neighbour violence and cases:
+  vm10:zd10                                                  1.153 (1.070 to 1.243)  p = 0.0002
+  nbc                                                        1.160 (0.728 to 1.851)  p = 0.5321
+ Moran's I, Pearson residuals of the primary model:
+  2019  I = +0.034  p = 0.231
+  2020  I = +0.185  p = 0.003
+  2021  I = +0.008  p = 0.005
+  2022  I = +0.031  p = 0.044
+  2023  I = -0.024  p = 0.341
+  2024  I = +0.349  p = 0.001
+  2025  I = +0.055  p = 0.129
+  mean I = +0.091; significant in 4 of 7 years
+>>> 08_figures
+wrote Figure3_conflict_coverage and Figure4_map (.png, .pdf)
+>>> 10_review3_checks
+  Primary interaction (Table 3)                              1.133 (1.051 to 1.222)  p = 0.0012
+
+=== B1. districts in and out of the interaction sample ===
+                group  districts  cases_2019_2025  share_of_cases  population_m  cases_per_million_py  districts_with_any_case  violent_events_per_yr_median  violent_events_per_yr_mean
+              outside         21                2           0.006         7.988                 0.036                        2                         0.000                       2.497
+in interaction sample        120              361           0.994       227.823                 0.226                       68                         3.786                      11.626
+ excluded districts by province: {'Azad Kashmir': 8, 'Gilgit-Baltistan': 6, 'Balochistan': 2, 'Khyber-Pakhtunkhwa': 2, 'Federally Administered Tribal Ar': 1, 'Islamabad': 1, 'Sindh': 1}
+ excluded districts with cases: [{'province': 'Gilgit-Baltistan', 'cases': 1, 'name': 'Chilas'}, {'province': 'Islamabad', 'cases': 1, 'name': 'Islamabad'}]
+
+=== B2. targeting rules: 2018-2021 information, 2022-2025 cases ===
+                                             rule  districts  population_share  later_cases  share_of_later_cases  rate_flagged  rate_other  rate_ratio
+                         (a) top violence tertile         39             0.392           90                 0.698         0.245       0.069       3.578
+                        (b) top zero-dose tertile         40             0.129          100                 0.775         0.827       0.036      23.224
+                       (c) both: the paper's rule         19             0.053           78                 0.605         1.588       0.058      27.596
+                           (d) any case 2018-2021         58             0.480          118                 0.915         0.263       0.023      11.598
+       (e) 19 districts with most cases 2018-2021         19             0.166           89                 0.690         0.573       0.051      11.159
+(f) 19 districts with highest incidence 2018-2021         19             0.042           71                 0.550         1.798       0.065      27.766
+                                   (g) (c) or (d)         64             0.488          120                 0.930         0.263       0.019      13.980
+ (h) 19 districts with highest violence 2018-2021         19             0.236           52                 0.403         0.236       0.108       2.187
+          (i) 19 districts with highest zero-dose         19             0.041           54                 0.419         1.423       0.084      17.024
+  joint but no prior case: 6 districts, 2 later cases
+  prior case but not joint: 45 districts, 42 later cases
+
+=== B3a. wild cluster score bootstrap, null imposed (Kline and Santos 2012) ===
+  Rademacher score statistic 3.089; bootstrap p = 0.0004 (B = 9999)
+  Webb       score statistic 3.089; bootstrap p = 0.0002 (B = 9999)
+  asymptotic cluster-robust score test p = 0.0020; Wald p (Table 3) = 0.0012
+
+=== B3b. excluding outbreak years ===
+  excluding 2024 (n = 720, cases = 288)                      1.167 (1.057 to 1.289)  p = 0.0023
+  excluding 2024 and 2025 (n = 600, cases = 258)             1.143 (1.043 to 1.251)  p = 0.0041
+  excluding 2019 and 2020 (n = 600, cases = 130)             1.106 (1.043 to 1.173)  p = 0.0008
+
+=== B4. district covariates ===
+  correlations with zero-dose and district-mean violence (district level):
+      travel_h  log_fac  log_ntl
+zd10      0.43    -0.24    -0.40
+vm10      0.11     0.31     0.23
+  primary: interaction                                       1.133 (1.051 to 1.222)  p = 0.0012 | zero-dose main 1.42 (1.16-1.73)
+  + travel time: interaction                                 1.124 (1.054 to 1.198)  p = 0.0003 | zero-dose main 1.47 (1.20-1.80)
+  + facility density: interaction                            1.126 (1.043 to 1.216)  p = 0.0024 | zero-dose main 1.42 (1.16-1.74)
+  + night-time lights: interaction                           1.135 (1.050 to 1.227)  p = 0.0015 | zero-dose main 1.42 (1.16-1.73)
+  + all three: interaction                                   1.102 (1.035 to 1.173)  p = 0.0023 | zero-dose main 1.48 (1.19-1.85)
+  pre-specified criterion (interaction > 1.05 with all three): met
+
+=== B5. spatial inference ===
+  uniform (pre-specified)  100 km: IRR 1.133 (1.056-1.216) p = 0.0005
+  uniform (pre-specified)  200 km: IRR 1.133 (1.067-1.202) p = 0.0000
+  uniform (pre-specified)  300 km: IRR 1.133 (1.074-1.195) p = 0.0000
+  Bartlett                 100 km: IRR 1.133 (1.062-1.208) p = 0.0001
+  Bartlett                 200 km: IRR 1.133 (1.060-1.210) p = 0.0002
+  Bartlett                 300 km: IRR 1.133 (1.063-1.207) p = 0.0001
+  clustered by division (27 clusters), Wald                  1.133 (1.056 to 1.215)  p = 0.0005
+  clustered by division, wild score bootstrap (Webb): p = 0.0110
+
+=== A1. zero-dose measure: standard age group ===
+  corrected, 12-23 months (primary): interaction             1.133 (1.051 to 1.222)  p = 0.0012 | zero-dose (main model) 1.70 (1.37-2.10)
+  corrected, 12-35 months: interaction                       1.114 (1.047 to 1.186)  p = 0.0007 | zero-dose (main model) 1.68 (1.37-2.06)
+  corrected, 0-35 months: interaction                        1.113 (1.043 to 1.187)  p = 0.0012 | zero-dose (main model) 1.78 (1.44-2.19)
+  previous definition, 0-35 months: interaction              1.097 (1.034 to 1.163)  p = 0.0022 | zero-dose (main model) 1.85 (1.46-2.33)
+
+=== A5. Moran 2021: I = 0.0075, permutation SD 0.0073, p_sim = 0.002, normal p = 0.78; cases = 1
+>>> 12_table1
+      wpv1_cases  violent_events  health_worker_attacks  polio_campaign_attacks
+year                                                                           
+2018          12           824.0                    8.0                     7.0
+2019         147           960.0                   25.0                    10.0
+2020          84           538.0                    7.0                     5.0
+2021           1           783.0                   12.0                    16.0
+2022          20          1424.0                   13.0                    16.0
+2023           6          1800.0                   28.0                    23.0
+2024          74          2404.0                   36.0                    41.0
+2025          31             NaN                    NaN                     NaN
+>>> 13_figure1
+wrote Figure 1
+>>> 99_verify
+Checked 363 numbers printed in the manuscript against this run.
+
+  FAIL  t2_c3_vm1                                manuscript 1.010    now 1.0142   -> Table 2 col 3
+  FAIL  t2_c3_vm1_lo                             manuscript 0.999    now 1.0014   -> Table 2 col 3
+  FAIL  t2_c3_vm1_hi                             manuscript 1.022    now 1.0272   -> Table 2 col 3
+  FAIL  t2_c3_vd1_lo                             manuscript 0.992    now 0.9950   -> Table 2 col 3
+  FAIL  t2_c3_vd1_hi                             manuscript 1.014    now 1.0101   -> Table 2 col 3
+  FAIL  t2_c3_zd10                               manuscript 1.83     now 1.6950   -> Table 2 col 3; Abstract; Results P34
+  FAIL  t2_c3_zd10_lo                            manuscript 1.45     now 1.3691   -> Table 2 col 3; Abstract
+  FAIL  t2_c3_zd10_hi                            manuscript 2.32     now 2.0984   -> Table 2 col 3; Abstract
+  FAIL  int                                      manuscript 1.098    now 1.1329   -> Results P34; Table 3; Table S4; Abstract (1.10)
+  FAIL  int_lo                                   manuscript 1.035    now 1.0506   -> Results P34; Table 3
+  FAIL  int_hi                                   manuscript 1.166    now 1.2216   -> Results P34; Table 3
+  FAIL  int_p                                    manuscript 0.002    now 0.0012   -> Results P34; Table 3
+  FAIL  marg5                                    manuscript 0.843    now 0.7039   -> Table 3; Table S3
+  FAIL  marg5_lo                                 manuscript 0.680    now 0.5117   -> Table 3; Table S3
+  FAIL  marg5_hi                                 manuscript 1.044    now 0.9684   -> Table 3; Table S3
+  FAIL  marg5_p                                  manuscript 0.12     now 0.0310   -> Table 3
+  FAIL  marg10                                   manuscript 0.883    now 0.7492   -> Table 3; Table S3; Abstract (0.88); Results
+  FAIL  marg10_lo                                manuscript 0.730    now 0.5637   -> Table 3; Table S3
+  FAIL  marg10_hi                                manuscript 1.069    now 0.9958   -> Table 3; Table S3
+  FAIL  marg10_p                                 manuscript 0.20     now 0.0467   -> Table 3
+  FAIL  marg20                                   manuscript 0.970    now 0.8488   -> Table 3; Table S3
+  FAIL  marg20_lo                                manuscript 0.834    now 0.6820   -> Table 3; Table S3
+  FAIL  marg20_hi                                manuscript 1.129    now 1.0565   -> Table 3; Table S3
+  FAIL  marg20_p                                 manuscript 0.70     now 0.1421   -> Table 3 (corrected from 0.69; see README)
+  FAIL  marg30                                   manuscript 1.066    now 0.9616   -> Table 3; Table S3
+  FAIL  marg30_lo                                manuscript 0.937    now 0.8179   -> Table 3; Table S3
+  FAIL  marg30_hi                                manuscript 1.212    now 1.1307   -> Table 3; Table S3
+  FAIL  marg30_p                                 manuscript 0.33     now 0.6358   -> Table 3
+  FAIL  marg40                                   manuscript 1.170    now 1.0894   -> Table 3; Table S3; Abstract (1.17); Results
+  FAIL  marg40_lo                                manuscript 1.026    now 0.9603   -> Table 3; Table S3
+  FAIL  marg40_hi                                manuscript 1.335    now 1.2360   -> Table 3; Table S3
+  FAIL  marg40_p                                 manuscript 0.019    now 0.1834   -> Table 3
+  FAIL  marg50                                   manuscript 1.285    now 1.2342   -> Table 3; Table S3; Results (1.29)
+  FAIL  marg50_lo                                manuscript 1.097    now 1.0833   -> Table 3; Table S3
+  FAIL  marg50_hi                                manuscript 1.506    now 1.4062   -> Table 3; Table S3
+  FAIL  marg60                                   manuscript 1.412    now 1.3983   -> Table 3; Table S3
+  FAIL  marg60_lo                                manuscript 1.156    now 1.1778   -> Table 3; Table S3
+  FAIL  marg60_hi                                manuscript 1.724    now 1.6601   -> Table 3; Table S3
+  FAIL  marg60_p                                 manuscript 0.001    now 0.0001   -> Table 3
+  FAIL  lopo_Balochis                            manuscript 1.102    now 1.1493   -> Table S4; Results
+  FAIL  lopo_Balochis_p                          manuscript 0.037    now 0.0019   -> Table S4
+  FAIL  lopo_Federall                            manuscript 1.123    now 1.1485   -> Table S4; Results
+  FAIL  lopo_Federall_p                          manuscript 0.047    now 0.0237   -> Table S4
+  FAIL  lopo_Khyber-P                            manuscript 1.121    now 1.1002   -> Table S4
+  FAIL  lopo_Khyber-P_p                          manuscript 0.0002   now 0.0066   -> Table S4
+  FAIL  lopo_Punjab                              manuscript 1.110    now 1.1447   -> Table S4
+  FAIL  lopo_Punjab_p                            manuscript 0.0009   now 0.0012   -> Table S4
+  FAIL  lopo_Sindh                               manuscript 1.080    now 1.1699   -> Table S4; Results
+  FAIL  lopo_Sindh_p                             manuscript 0.016    now 0.0024   -> Table S4
+  FAIL  lodo_min                                 manuscript 1.089    now 1.1074   -> Table S4; Results
+  FAIL  lodo_max                                 manuscript 1.116    now 1.1681   -> Table S4; Results
+  FAIL  lodo_maxp                                manuscript 0.050    now 0.0218   -> Table S4; Results
+  FAIL  strat_low                                manuscript 0.911    now 0.7448   -> Table S4; Results
+  FAIL  strat_low_lo                             manuscript 0.539    now 0.4700   -> Table S4; Results
+  FAIL  strat_low_hi                             manuscript 1.541    now 1.1804   -> Table S4; Results
+  FAIL  strat_low_p                              manuscript 0.73     now 0.2098   -> Table S4
+  FAIL  strat_mid                                manuscript 0.769    now 0.8336   -> Table S4; Results
+  FAIL  strat_mid_lo                             manuscript 0.579    now 0.6737   -> Table S4; Results
+  FAIL  strat_mid_hi                             manuscript 1.022    now 1.0315   -> Table S4; Results
+  FAIL  strat_mid_p                              manuscript 0.070    now 0.0940   -> Table S4
+  FAIL  strat_high                               manuscript 1.249    now 1.1493   -> Table S4; Results
+  FAIL  strat_high_lo                            manuscript 1.026    now 0.9529   -> Table S4; Results
+  FAIL  strat_high_hi                            manuscript 1.522    now 1.3861   -> Table S4; Results
+  FAIL  strat_high_p                             manuscript 0.027    now 0.1456   -> Table S4; Results
+  FAIL  grid_hh_districts                        manuscript 20       now 21.0000   -> Abstract; Results; Figure 3B; Figure 4
+  FAIL  grid_hh_cases                            manuscript 195      now 194.0000   -> Abstract; Results; Figure 3B
+  FAIL  grid_hh_rate                             manuscript 1.82     now 2.3029   -> Results; Figure 3B; Abstract (1.8)
+  FAIL  grid_fold                                manuscript 16       now 20.8298   -> Results (16-fold)
+  FAIL  grid_max_other                           manuscript 0.5      now 0.5940   -> Results (no other cell exceeded 0.5)
+  FAIL  ri_p                                     manuscript 0.046    now 0.0149   -> Abstract; Results P34; Table 3; Table S4; Limitations
+  FAIL  h1_vm10                                  manuscript 1.051    now 1.0665   -> Table S6
+  FAIL  h1_vm10_lo                               manuscript 0.914    now 0.9163   -> Table S6
+  FAIL  h1_vm10_hi                               manuscript 1.208    now 1.2412   -> Table S6
+  FAIL  h1_vd10                                  manuscript 1.212    now 1.2032   -> Table S6; Results P40 (1.21)
+  FAIL  h1_vd10_lo                               manuscript 1.020    now 1.0074   -> Table S6; Results
+  FAIL  h1_vd10_hi                               manuscript 1.439    now 1.4370   -> Table S6; Results
+  FAIL  h1_vd10_p                                manuscript 0.029    now 0.0413   -> Table S6; Results
+  FAIL  h1_zd10                                  manuscript 1.348    now 1.2515   -> Table S6
+  FAIL  h1_zd10_lo                               manuscript 1.113    now 1.0747   -> Table S6
+  FAIL  h1_zd10_hi                               manuscript 1.633    now 1.4573   -> Table S6
+  FAIL  h1_int                                   manuscript 1.046    now 1.0342   -> Table S6; Limitations (1.05)
+  FAIL  h1_int_p                                 manuscript 0.19     now 0.2933   -> Table S6; Limitations
+  FAIL  h2_vm10                                  manuscript 1.112    now 1.1612   -> Table S6
+  FAIL  h2_vm10_lo                               manuscript 0.929    now 0.9627   -> Table S6
+  FAIL  h2_vm10_hi                               manuscript 1.331    now 1.4006   -> Table S6
+  FAIL  h2_vd10                                  manuscript 0.846    now 0.8357   -> Table S6; Results (0.85)
+  FAIL  h2_vd10_lo                               manuscript 0.684    now 0.6730   -> Table S6; Results
+  FAIL  h2_vd10_hi                               manuscript 1.048    now 1.0379   -> Table S6; Results
+  FAIL  h2_zd10                                  manuscript 1.534    now 1.3989   -> Table S6
+  FAIL  h2_zd10_lo                               manuscript 1.240    now 1.1707   -> Table S6
+  FAIL  h2_zd10_hi                               manuscript 1.897    now 1.6717   -> Table S6
+  FAIL  tv_cases_flag                            manuscript 83       now 78.0000   -> Abstract; Results; Table S7
+  FAIL  tv_cases_rest                            manuscript 46       now 51.0000   -> Table S7
+  FAIL  tv_py_flag                               manuscript 69.5     now 49.1043   -> Table S7
+  FAIL  tv_py_rest                               manuscript 865.6    now 886.0072   -> Table S7
+  FAIL  tv_rate_flag                             manuscript 1.19     now 1.5885   -> Abstract; Results; Table S7
+  FAIL  tv_rate_rest                             manuscript 0.05     now 0.0576   -> Abstract; Results; Table S7
+  FAIL  tv_crude_rr                              manuscript 22.5     now 27.5957   -> Results; Table S7
+  FAIL  tv_overlap                               manuscript 16       now 17.0000   -> Results; Table S7
+  FAIL  m_py                                     manuscript 7.11     now 9.4054   -> Abstract; Results; Table S7; Table S8
+  FAIL  m_py_lo                                  manuscript 3.69     now 4.8614   -> Abstract; Results; Table S7; Table S8
+  FAIL  m_py_hi                                  manuscript 13.69    now 18.1968   -> Abstract; Results; Table S7; Table S8
+  FAIL  m_y                                      manuscript 22.49    now 27.6421   -> Table S7
+  FAIL  m_y_lo                                   manuscript 9.81     now 13.3757   -> Table S7
+  FAIL  m_y_hi                                   manuscript 51.54    now 57.1250   -> Table S7
+  FAIL  m_py_aic                                 manuscript 575.8    now 572.7638   -> Results; Table S8
+  FAIL  m_any_flag                               manuscript 5.03     now 6.5902   -> Table S8
+  FAIL  m_any_flag_lo                            manuscript 2.66     now 3.4959   -> Table S8
+  FAIL  m_any_flag_hi                            manuscript 9.49     now 12.4234   -> Table S8
+  FAIL  m_any_hist                               manuscript 3.75     now 4.0730   -> Table S8
+  FAIL  m_any_hist_lo                            manuscript 1.77     now 1.8486   -> Table S8
+  FAIL  m_any_hist_hi                            manuscript 7.94     now 8.9740   -> Table S8
+  FAIL  m_cnt_flag                               manuscript 3.24     now 3.3591   -> Abstract (tracked version); Results; Table S8
+  FAIL  m_cnt_flag_lo                            manuscript 1.67     now 1.4386   -> Results; Table S8
+  FAIL  m_cnt_flag_hi                            manuscript 6.26     now 7.8438   -> Results; Table S8
+  FAIL  m_cnt_hist                               manuscript 2.08     now 2.0416   -> Results; Table S8
+  FAIL  m_cnt_hist_lo                            manuscript 1.48     now 1.3953   -> Results; Table S8
+  FAIL  m_cnt_hist_hi                            manuscript 2.93     now 2.9871   -> Results; Table S8
+  FAIL  m_cnt_flag_aic                           manuscript 527.6    now 531.7598   -> Results; Table S8
+  FAIL  m_rate_flag_lo                           manuscript 1.33     now 1.0892   -> Results; trimmed Abstract
+  FAIL  m_rate_flag_hi                           manuscript 5.59     now 6.8086   -> Results; trimmed Abstract
+  FAIL  m_rate_flag_p                            manuscript 0.006    now 0.0321   -> Results
+  FAIL  m_rate_hist                              manuscript 2.29     now 2.2783   -> Results
+  FAIL  m_rate_hist_lo                           manuscript 1.48     now 1.4231   -> Results
+  FAIL  m_rate_hist_hi                           manuscript 3.54     now 3.6476   -> Results
+  FAIL  m_rate_flag_aic                          manuscript 504.5    now 507.7900   -> Results
+  FAIL  m_both_flag                              manuscript 2.87     now 3.0026   -> Results
+  FAIL  m_both_flag_lo                           manuscript 1.39     now 1.1933   -> Results
+  FAIL  m_both_flag_hi                           manuscript 5.92     now 7.5556   -> Results
+  FAIL  noprior_rate_flag                        manuscript 0.49     now 0.2790   -> Results (corrected from 0.65; see README)
+  FAIL  pred_ll                                  manuscript 0.09     now 0.0728   -> Table 4; Results
+  FAIL  pred_ll_lo                               manuscript 0.06     now 0.0447   -> Table 4
+  FAIL  pred_ll_hi                               manuscript 0.18     now 0.1514   -> Table 4
+  FAIL  pred_hl                                  manuscript 0.06     now 0.0292   -> Table 4; Results
+  FAIL  pred_hl_lo                               manuscript 0.04     now 0.0149   -> Table 4
+  FAIL  pred_hl_hi                               manuscript 0.12     now 0.0714   -> Table 4
+  FAIL  pred_lh                                  manuscript 0.32     now 0.4292   -> Table 4; Results
+  FAIL  pred_lh_lo                               manuscript 0.22     now 0.2831   -> Table 4
+  FAIL  pred_lh_hi                               manuscript 0.54     now 0.8208   -> Table 4
+  FAIL  pred_hh                                  manuscript 0.45     now 0.8120   -> Table 4; Results
+  FAIL  pred_hh_lo                               manuscript 0.32     now 0.4897   -> Table 4
+  FAIL  pred_hh_hi                               manuscript 0.80     now 1.7398   -> Table 4
+  FAIL  c_viol_lowzd                             manuscript 0.69     now 0.4034   -> Results
+  FAIL  c_viol_lowzd_lo                          manuscript 0.42     now 0.1776   -> Results
+  FAIL  c_viol_lowzd_hi                          manuscript 1.14     now 0.8987   -> Results
+  FAIL  c_viol_highzd                            manuscript 1.40     now 1.8894   -> Results
+  FAIL  c_viol_highzd_lo                         manuscript 1.01     now 1.3314   -> Results
+  FAIL  c_viol_highzd_hi                         manuscript 1.94     now 2.6973   -> Results
+  FAIL  c_both                                   manuscript 4.8      now 11.1026   -> Results
+  FAIL  c_both_lo                                manuscript 2.1      now 3.6412   -> Results
+  FAIL  c_both_hi                                manuscript 11.3     now 33.2532   -> Results
+  FAIL  s1_vm10xzd10                             manuscript 1.131    now 1.1535   -> Results; Table S9
+  FAIL  s1_vm10xzd10_lo                          manuscript 1.045    now 1.0688   -> Results; Table S9
+  FAIL  s1_vm10xzd10_hi                          manuscript 1.225    now 1.2450   -> Results; Table S9
+  FAIL  s1_nm10                                  manuscript 1.236    now 1.2000   -> Results; Table S9
+  FAIL  s1_nm10_lo                               manuscript 0.922    now 0.9152   -> Results; Table S9
+  FAIL  s1_nm10_hi                               manuscript 1.658    now 1.5733   -> Results; Table S9
+  FAIL  s1_nd10                                  manuscript 0.936    now 1.0156   -> Results; Table S9
+  FAIL  s1_nd10_lo                               manuscript 0.654    now 0.8257   -> Results; Table S9
+  FAIL  s1_nd10_hi                               manuscript 1.342    now 1.2492   -> Results; Table S9
+  FAIL  s2_vm10xzd10                             manuscript 1.133    now 1.1533   -> Results; Table S9
+  FAIL  s2_vm10xzd10_lo                          manuscript 1.047    now 1.0698   -> Results; Table S9
+  FAIL  s2_vm10xzd10_hi                          manuscript 1.226    now 1.2433   -> Results; Table S9
+  FAIL  s2_nbc                                   manuscript 1.148    now 1.1605   -> Results; Table S9
+  FAIL  s2_nbc_lo                                manuscript 0.722    now 0.7276   -> Results; Table S9
+  FAIL  s2_nbc_hi                                manuscript 1.825    now 1.8509   -> Results; Table S9
+  FAIL  moran_2019                               manuscript -0.01    now 0.0338   -> Table S9 note
+  FAIL  moran_2020                               manuscript 0.24     now 0.1852   -> Results; Table S9 note
+  FAIL  moran_2021                               manuscript 0.00     now 0.0075   -> Table S9 note
+  FAIL  moran_2024                               manuscript 0.33     now 0.3489   -> Results; Table S9 note
+  FAIL  moran_2025                               manuscript 0.06     now 0.0549   -> Table S9 note
+  FAIL  inf_wb_rad_p                             manuscript 0.004    now 0.0004   -> Results; Table S10
+  FAIL  inf_wb_webb_p                            manuscript 0.005    now 0.0002   -> Results; Table S10
+  FAIL  inf_ex2024                               manuscript 1.108    now 1.1669   -> Results; Table S10
+  FAIL  inf_ex2024_lo                            manuscript 1.031    now 1.0566   -> Results; Table S10
+  FAIL  inf_ex2024_hi                            manuscript 1.191    now 1.2886   -> Results; Table S10
+  FAIL  inf_ex202425                             manuscript 1.088    now 1.1425   -> Results; Table S10
+  FAIL  inf_ex202425_lo                          manuscript 1.009    now 1.0431   -> Results; Table S10
+  FAIL  inf_ex202425_hi                          manuscript 1.174    now 1.2514   -> Results; Table S10
+  FAIL  cov_all                                  manuscript 1.079    now 1.1020   -> Results; Table S10
+  FAIL  cov_all_lo                               manuscript 1.020    now 1.0353   -> Results; Table S10
+  FAIL  cov_all_hi                               manuscript 1.141    now 1.1729   -> Results; Table S10
+  FAIL  sp_bartlett300km                         manuscript 1.098    now 1.1329   -> Results; Table S10
+  FAIL  sp_bartlett300km_lo                      manuscript 1.054    now 1.0634   -> Results; Table S10
+  FAIL  sp_bartlett300km_hi                      manuscript 1.144    now 1.2070   -> Results; Table S10
+  FAIL  inf_ex201920                             manuscript 1.092    now 1.1057   -> Table S10
+  FAIL  inf_ex201920_lo                          manuscript 1.037    now 1.0426   -> Table S10
+  FAIL  inf_ex201920_hi                          manuscript 1.150    now 1.1727   -> Table S10
+  FAIL  cov_travel                               manuscript 1.098    now 1.1240   -> Table S10
+  FAIL  cov_travel_lo                            manuscript 1.036    now 1.0542   -> Table S10
+  FAIL  cov_travel_hi                            manuscript 1.163    now 1.1983   -> Table S10
+  FAIL  cov_fac                                  manuscript 1.077    now 1.1260   -> Table S10
+  FAIL  cov_fac_lo                               manuscript 1.019    now 1.0430   -> Table S10
+  FAIL  cov_fac_hi                               manuscript 1.139    now 1.2156   -> Table S10
+  FAIL  cov_ntl                                  manuscript 1.081    now 1.1349   -> Table S10
+  FAIL  cov_ntl_lo                               manuscript 1.023    now 1.0496   -> Table S10
+  FAIL  cov_ntl_hi                               manuscript 1.144    now 1.2271   -> Table S10
+  FAIL  zd_1235                                  manuscript 1.107    now 1.1143   -> Table S10
+  FAIL  zd_1235_lo                               manuscript 1.040    now 1.0468   -> Table S10
+  FAIL  zd_1235_hi                               manuscript 1.177    now 1.1861   -> Table S10
+  FAIL  sp_bartlett100km                         manuscript 1.098    now 1.1329   -> Table S10
+  FAIL  sp_bartlett100km_lo                      manuscript 1.045    now 1.0624   -> Table S10
+  FAIL  sp_bartlett100km_hi                      manuscript 1.154    now 1.2081   -> Table S10
+  FAIL  sp_bartlett200km                         manuscript 1.098    now 1.1329   -> Table S10
+  FAIL  sp_bartlett200km_lo                      manuscript 1.048    now 1.0604   -> Table S10
+  FAIL  sp_bartlett200km_hi                      manuscript 1.151    now 1.2103   -> Table S10
+  FAIL  sp_divisionclusters27wald                manuscript 1.098    now 1.1329   -> Table S10
+  FAIL  sp_divisionclusters27wald_lo             manuscript 1.041    now 1.0564   -> Table S10
+  FAIL  sp_divisionclusters27wald_hi             manuscript 1.159    now 1.2150   -> Table S10
+  FAIL  sp_divisionclusters27wildscorebootstrapwebb_p manuscript 0.026    now 0.0110   -> Results; Table S10
+  FAIL  moran21_p_norm                           manuscript 0.85     now 0.7814   -> Table S9 note
+  FAIL  tg1_share                                manuscript 76.7     now 77.5194   -> Table S11
+  FAIL  tg1_popshare                             manuscript 17.2     now 12.9286   -> Table S11
+  FAIL  tg1_rr                                   manuscript 15.8     now 23.2235   -> Table S11
+  FAIL  tg2_share                                manuscript 64.3     now 60.4651   -> Table S11
+  FAIL  tg2_popshare                             manuscript 7.4      now 5.2512   -> Table S11
+  FAIL  tg2_rr                                   manuscript 22.5     now 27.5957   -> Table S11
+  FAIL  tg6_districts                            manuscript 62       now 64.0000   -> Table S11
+  FAIL  tg6_popshare                             manuscript 48.5     now 48.8156   -> Table S11
+  FAIL  tg6_rr                                   manuscript 14.2     now 13.9803   -> Table S11
+  FAIL  tg8_share                                manuscript 53.5     now 41.8605   -> Table S11
+  FAIL  tg8_popshare                             manuscript 5.6      now 4.0577   -> Table S11
+  FAIL  tg8_rr                                   manuscript 19.5     now 17.0242   -> Table S11
+  FAIL  tg2_share                                manuscript 64       now 60.4651   -> Results (percent, rounded)
+  FAIL  tg8_share                                manuscript 53       now 41.8605   -> Results (percent, rounded)
+  MISSING  zd_1223                               (no script produced it)  -> Results; Table S10
+  MISSING  zd_1223_lo                            (no script produced it)  -> Results; Table S10
+  MISSING  zd_1223_hi                            (no script produced it)  -> Results; Table S10
+
+135 pass, 225 fail, 3 missing, 0 skipped

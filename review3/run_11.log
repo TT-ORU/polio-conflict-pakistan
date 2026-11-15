@@ -1,0 +1,28 @@
+Event types of the flagged events, 2018-2024:
+                             polio    hw
+event_type                             
+Protests                      126  1952
+Battles                        70    40
+Violence against civilians     37    80
+Riots                          20   101
+Explosions/Remote violence     11     9
+Strategic developments          6     7
+Total                         270  2189
+n_polio: rebuilt/used ratio by year [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+n_hworker: rebuilt/used ratio by year [1.01 1.02 1.   1.01 1.02 1.   1.04 1.   1.02 1.05]
+
+check: 'polio_violent' equals the panel's polio_attacks (violent events only): True
+
+Temporal ordering (Table S5 design) with each definition
+  polio-campaign, all event types (as Ta: early->late        0.956 (0.651 to 1.405)  p = 0.8204
+  polio-campaign, all event types (as Ta: late->early        1.579 (1.192 to 2.091)  p = 0.0015
+  polio-campaign, violent events or riot: early->late        2.100 (0.525 to 8.408)  p = 0.2945
+  polio-campaign, violent events or riot: late->early        1.735 (1.189 to 2.534)  p = 0.0043
+  polio-campaign, violent events only: early->late           2.836 (0.848 to 9.482)  p = 0.0906
+  polio-campaign, violent events only: late->early           1.731 (1.183 to 2.534)  p = 0.0048
+  health-worker, all event types (approx: early->late        0.969 (0.937 to 1.003)  p = 0.0725
+  health-worker, all event types (approx: late->early        0.989 (0.953 to 1.028)  p = 0.5811
+  health-worker, violent events or riots: early->late        0.889 (0.614 to 1.287)  p = 0.5329
+  health-worker, violent events or riots: late->early        1.384 (1.042 to 1.838)  p = 0.0246
+  health-worker, violent events only: early->late            1.379 (0.515 to 3.691)  p = 0.5226
+  health-worker, violent events only: late->early            1.468 (1.042 to 2.069)  p = 0.0282
